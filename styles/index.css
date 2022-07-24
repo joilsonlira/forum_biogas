@@ -1,0 +1,358 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gotham';
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+:root{
+    --color-BG: #082333;
+    --color-MAIN: #CA2005;
+    --color-LIGTH: #DBDBDB;
+}
+
+body{
+    background-color: var(--color-BG);
+}
+.btn{
+    font-size: 24px;
+    font-family: gotham-bold;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem;
+    border: none;
+    border-radius: 50px;
+    color: var(--color-LIGTH);
+    background-color: var(--color-MAIN);
+}
+.active{
+    border-radius: 50px;
+    padding: .4rem;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: var(--color-MAIN);
+}
+.endereco{
+    font-weight: 400;
+    font-size: 20px;
+    padding: .5rem;
+}
+.btn_inscrevase{
+    width: 250px;
+}
+.main_content{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'HEADER'
+    'START'
+    'ABOUT'
+    'EDICAO'
+    'PROGRAMACAO'
+    'PATROCINADOR'
+    'FOOTER'
+    ;
+    max-width: 1366px;
+}
+.main_header{
+    position: fixed;
+    grid-area: HEADER;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-transform: uppercase;
+    font-size: 13px;
+    width: 100%;
+    color: white;
+    padding: 0 30px;
+    padding-bottom: 30px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.6111) 0%, rgba(8, 35, 51, 0.5166) 100%), #29404D;
+}
+.main_nav{
+    width: auto;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+}
+.menu_item:hover{
+    width: 150px;
+    text-align: center;
+    transition: 500ms ease;
+    border-bottom: 1px inset var(--color-MAIN);
+}
+.start{
+    grid-area: START;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-top: 109px;
+    height: 70vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.6111) 0%, rgba(8, 35, 51, 0.5166) 100%), #29404D;
+}
+.logo_start{
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+}
+.logo_start img{
+    width: 100%;
+    height: 100%;
+}
+.information h1, h2, p, button{
+    margin-bottom: 30px;
+}
+.information h2{
+    display: none;
+}
+.information img{
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    width: 53%;
+}
+.information h1{
+    font-family: gotham-bold;
+    font-size: 48px;
+    color: white;
+}
+.information h2{
+    color: var(--color-LIGTH);
+}
+.information p{
+    color: var(--color-LIGTH);
+}
+.information p{
+    width: 100%;
+}
+.btn_inscrevase{
+    cursor:not-allowed;
+}
+
+/*################ ABOUT ####################*/
+.section_header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-bottom: 2px solid var(--color-LIGTH);
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-MAIN);
+}
+.section_header h2{
+    margin-left: 8px;
+}
+.about_header img{
+    width: auto;
+    height: auto;
+}
+.about{
+    grid-area: ABOUT;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    padding: 0 30px;
+    font-size: 18px;
+    color: var(--color-LIGTH);
+}
+.about_information{
+    width: 60%;
+}
+.about span{
+    color: var(--color-MAIN);
+}
+
+
+/*################ ANTERIOR #################*/
+.edicao_anterior{
+    grid-area: EDICAO;
+    display: none;
+}
+
+/*############## PROGRAMACAO ################*/
+.programacao_container{
+    grid-area: PROGRAMACAO;
+    display: none;
+}
+
+/*############# PATROCINADOR ################*/
+.patrocinador{
+    grid-area: PATROCINADOR;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+.patrocinador .section_header{
+    border: none;
+}
+.patrocinador_start{
+    max-width: 1223px;
+    height: 100vh;
+}
+.porque_patrocinador{
+    margin: 0 auto;
+    padding: 20px 45px 0 45px;
+    width: 80%;
+    height: auto;
+    border: 1px solid #8f8f8f;
+    border-radius: 4px;
+    background-color: #eee;
+}
+.porque_patrocinador span{
+    font-family: gotham-bold;
+    font-weight: bold;
+}
+.porque_patrocinador button{
+    margin-top: 20px;
+    font-size: 20px;
+    padding: .4rem 2rem;
+}
+.cota{
+    display: none;
+}
+
+/*############### FOOTER #####################*/
+footer{
+    grid-area: FOOTER;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    padding: 0 30px;
+}
+.faleconosco{
+    padding: .5rem 1rem;
+}
+
+
+.header_modal{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 1rem 0;
+    width: 100%;
+    height: auto;
+    /* background-color: #29404D; */
+    }
+    .header_modal h2{
+        font-size: 1rem;
+        text-align: left;
+        width: 90%;
+        margin: 0;
+    }
+.btn_motal_close{
+    display: flex;
+    width: auto;
+    height: auto;
+    border: none;
+    padding: .2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    }
+    .btn_motal_close:hover{
+        background-color: var(--color-main);
+        border: 1px solid var(--color-light-blue);
+    }
+.btn_motal_close img{
+    width: 100%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* por padrão é escondido todo o formulario */
+    position: fixed; /* torna fixo */
+    z-index: 1; /* Sobre todos os demais elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* pega 100% da largura */
+    height: 100%; /* pega 100% da altura */
+    overflow: auto; /*Se precisar de scroll*/
+    background-color: rgb(0,0,0); /* Cor de fundo */
+    background-color: rgba(0,0,0,0.4); /* cor de fundo com opacidade */
+}
+
+  /* Modal Content/Box */
+.modal-content {
+    margin: auto auto; /* 15% from the top and centered */
+    width: 30vw;
+    height: auto; /* Could be more or less, depending on screen size */
+}
+/* .modal_form_contato{
+
+} */
+.modal_form{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem 1rem 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--color-BG);
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-LIGTH);
+}
+.modal_form input, textarea{
+    border-radius: 6px;
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+.modal_form input[type="text"]:invalid,
+.modal_form input[type="tel"]:invalid,
+.modal_form input[type="email"]:invalid{
+    border-color: red;
+}
+.modal_form input[type="text"]:valid, 
+.modal_form input[type="tel"]:valid,
+.modal_form input[type="email"]:valid{
+    border-color: green;
+}
+.modal_form  textarea:invalid{
+    border-color: red;
+}
+.modal_form  textarea:valid{
+    border-color: green;
+}
+.modal_form  textarea{
+    resize: vertical;
+    height: 20%;
+}
+
+.modal_form input[type="button"],
+.modal_form input[type="submit"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    border-style: none;
+    width: auto;
+    font-size: 1rem;
+    font-weight:bold;
+    color: white;
+    background-color: var(--color-MAIN);
+}
