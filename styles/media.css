@@ -1,0 +1,92 @@
+@media screen and (min-width: 1367px){
+    .main_content{
+    max-width: 1366px;
+    margin: 0 auto;
+    box-shadow: rgba(9, 18, 68, 0.1) 0px 0px 15px 5px, rgba(0, 0, 0, 0.3) 0px 0px 10px 5px;
+    }
+
+    .main_header{
+    width: 1366px;
+    }
+    .start{
+        height: auto;
+        margin-bottom: 0px;
+    }
+    .logo_start{
+        width: 30%;
+    }
+    .information h1{
+        font-size: 3.1vw;
+    }
+    .endereco_icon img{
+        width: 5vw;
+    }
+
+    .data p{
+        font-size: 3.6vw;
+    }
+    .data_meio p{
+        font-size: 4.3vw;
+    }
+
+    .about{
+        margin-top: 30px;
+        align-items: center;
+    }
+}
+@media screen and (max-width:820px) {
+    .start{
+        flex-wrap: wrap;
+        height: auto;
+        margin-bottom: var(--standart-padding-margin);
+        padding: 20px 0;
+    }
+    .logo_start{
+    width: 50%;
+    margin-bottom: var(--standart-padding-margin);
+    }
+    .information, .endereco_description{
+        width: 100%;
+    }
+    
+    .information h1{
+        text-align: center;
+        font-size: 5.8vw;
+    }
+    .endereco_icon img{
+        width: 10vw;
+    }
+    .data_content{
+        justify-content: center;
+    }
+    .data p{
+        width: 100%;
+        font-size: 6.6vw;
+    }
+    .data_meio p{
+        width: 100%;
+        font-size: 8vw;
+    }
+    .endereco{
+        margin: 15px auto 0px auto;
+        width: 70vw;
+    }
+
+    /*########### ABOUT ###############*/
+    .about{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about_information{
+        width: 100%;
+    }
+
+    /*################ PATROCINADOR #############*/
+    .porque_patrocinador{
+        width: 90%;
+        height: auto;
+    }
+    .porque_patrocinador{
+        font-size: 3.9vw;
+    }
+}

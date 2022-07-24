@@ -13,6 +13,8 @@
     --color-BG: #082333;
     --color-MAIN: #CA2005;
     --color-LIGTH: #DBDBDB;
+    --standart-padding-margin: 30px;
+    --header-initial-HEIGHT: 100px;
 }
 
 body{
@@ -56,7 +58,7 @@ body{
     'PATROCINADOR'
     'FOOTER'
     ;
-    max-width: 1366px;
+    background-color: var(--color-BG);
 }
 .main_header{
     position: fixed;
@@ -67,13 +69,14 @@ body{
     text-transform: uppercase;
     font-size: 13px;
     width: 100%;
+    height: var(--header-initial-HEIGHT);
+    padding: 0px var(--standart-padding-margin);
     color: white;
-    padding: 0 30px;
-    padding-bottom: 30px;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.6111) 0%, rgba(8, 35, 51, 0.5166) 100%), #29404D;
 }
 .main_nav{
     width: auto;
+    padding-bottom: 5px;
 }
 .menu{
     display: flex;
@@ -91,10 +94,10 @@ body{
 .start{
     grid-area: START;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
-    margin-top: 109px;
+    padding: 0 var(--standart-padding-margin);
+    margin-top: var(--header-initial-HEIGHT);
     height: 70vh;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.6111) 0%, rgba(8, 35, 51, 0.5166) 100%), #29404D;
 }
@@ -108,14 +111,14 @@ body{
     height: 100%;
 }
 .information h1, h2, p, button{
-    margin-bottom: 30px;
+    margin-bottom: var(--standart-padding-margin);
 }
 .information h2{
     display: none;
 }
 .information img{
     width: 40%;
-    margin-bottom: 30px;
+    margin-bottom: var(--standart-padding-margin);
 }
 
 .information{
@@ -125,21 +128,48 @@ body{
 }
 .information h1{
     font-family: gotham-bold;
-    font-size: 48px;
+    font-size: 4.3vw;
     color: white;
 }
-.information h2{
-    color: var(--color-LIGTH);
+
+.data_content, .data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: gotham-bold;
+    color: white;
 }
-.information p{
-    color: var(--color-LIGTH);
-}
-.information p{
+.data_content{
     width: 100%;
+    height: auto;
 }
-.btn_inscrevase{
-    cursor:not-allowed;
+.endereco_icon{
+    display: flex;
+    align-items: center;
+    width: auto;
 }
+.endereco_icon img{
+    margin: 0;
+    width: 6vw;
+    height: auto;
+}
+.data{
+    display: flex;
+    justify-content: start;
+    margin: 10px 0px 10px 30px;
+    flex-direction: column;
+}
+.data p{
+    font-size: 5vw;
+    font-weight: bold;
+    width: 41vw;
+    height: 100%;
+    margin: 0;
+}
+.data_meio p{
+    font-size: 6vw;
+}
+
 
 /*################ ABOUT ####################*/
 .section_header{
@@ -167,7 +197,7 @@ body{
     justify-content: space-between;
     width: 100%;
     height: 100vh;
-    padding: 0 30px;
+    padding: 0 var(--standart-padding-margin);
     font-size: 18px;
     color: var(--color-LIGTH);
 }
@@ -198,7 +228,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 var(--standart-padding-margin);
 }
 .patrocinador .section_header{
     border: none;
@@ -237,7 +267,7 @@ footer{
     justify-content: space-between;
     width: 100%;
     height: 200px;
-    padding: 0 30px;
+    padding: 0 var(--standart-padding-margin);
 }
 .faleconosco{
     padding: .5rem 1rem;
