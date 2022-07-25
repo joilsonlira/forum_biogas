@@ -308,10 +308,27 @@ footer{
     width: 100%;
     height: auto;
     margin-top: var(--standart-padding-margin);
-    padding: 0 var(--standart-padding-margin);
+    padding: var(--standart-padding-margin);
+}
+.abiogas ,.faleconosco_container, .social_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 .faleconosco{
     padding: .5rem 1rem;
+    margin: 0;
+}
+.social_icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.social_icon img{
+    width: 2.2vw;
+    height: auto;
 }
 
 

@@ -161,7 +161,12 @@
         flex-direction: column;
         gap:var(--standart-padding-margin);
     }
-
+    .social_icon{
+        gap: 65px;
+    }
+    .social_icon img{
+        width: 8vw;
+    }
 
     /*############# MODAL #################*/
     .modal{
