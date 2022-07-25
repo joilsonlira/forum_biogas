@@ -87,11 +87,27 @@ body{
     
 }
 .menu_item:hover{
-    width: 150px;
     text-align: center;
-    transition: 500ms ease;
+    transition: 500ms;
+    transition: 500ms ease-in-out;
+    padding: 0 .5rem;
     border-bottom: 1px inset var(--color-MAIN);
 }
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    }
+    .hamburger .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: var(--color-second);
+    }
 .start{
     grid-area: START;
     display: flex;
@@ -151,7 +167,7 @@ body{
 }
 .endereco_icon img{
     margin: 0;
-    width: 6vw;
+    width: 4vw;
     height: auto;
 }
 .data{
@@ -161,14 +177,14 @@ body{
     flex-direction: column;
 }
 .data p{
-    font-size: 5vw;
+    font-size: 3vw;
     font-weight: bold;
     width: 41vw;
     height: 100%;
     margin: 0;
 }
 .data_meio p{
-    font-size: 6vw;
+    font-size: 3.6vw;
 }
 
 
@@ -179,6 +195,7 @@ body{
     justify-content: center;
     border-bottom: 2px solid var(--color-LIGTH);
     width: 100%;
+    height: auto;
     text-transform: uppercase;
     font-weight: bold;
     color: var(--color-MAIN);
