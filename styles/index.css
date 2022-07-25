@@ -361,7 +361,8 @@ footer{
   /* Modal Content/Box */
 .modal-content {
     margin: auto auto; /* 15% from the top and centered */
-    width: 30vw;
+    /* width: 30vw; */
+    width: 100%;
     height: auto; /* Could be more or less, depending on screen size */
 }
 /* .modal_form_contato{

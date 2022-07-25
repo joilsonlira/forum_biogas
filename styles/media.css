@@ -148,4 +148,13 @@
         gap:var(--standart-padding-margin);
     }
 
+
+    /*############# MODAL #################*/
+    .modal{
+        width: 100%;
+    }
+    .modal-content{
+        width: 90%;
+    }
+
 }
