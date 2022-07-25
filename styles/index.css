@@ -342,11 +342,11 @@ footer{
     align-items: center;
     gap: 15px;
 }
+
 .social_icon img{
     width: 2.2vw;
     height: auto;
 }
-
 
 .header_modal{
     display: flex;
@@ -356,7 +356,6 @@ footer{
     margin: 1rem 0;
     width: 100%;
     height: auto;
-    /* background-color: #29404D; */
     }
     .header_modal h2{
         font-size: 1rem;
