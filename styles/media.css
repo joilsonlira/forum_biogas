@@ -80,7 +80,9 @@
     .information, .endereco_description{
         width: 100%;
     }
-    
+    .information h1, h2, p, button{
+        margin-bottom: 0;
+    }
     .information h1{
         text-align: center;
         font-size: 5.8vw;
@@ -109,6 +111,14 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .about_container{
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+    .about_image{
+        width: 70%;
+        margin-bottom: var(--standart-padding-margin);
+    }
     .about_information{
         width: 100%;
     }
@@ -117,8 +127,14 @@
     .porque_patrocinador{
         width: 90%;
         height: auto;
+        font-size: 3vw;
+        margin-top: var(--standart-padding-margin);
+        padding: var(--standart-padding-margin);
     }
-    .porque_patrocinador{
-        font-size: 3.9vw;
+
+    footer{
+        flex-direction: column;
+        gap:var(--standart-padding-margin);
     }
+
 }
