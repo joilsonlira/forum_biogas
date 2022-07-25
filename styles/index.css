@@ -16,7 +16,12 @@
     --standart-padding-margin: 30px;
     --header-initial-HEIGHT: 100px;
 }
-
+html{
+    scroll-behavior: smooth;
+}
+:target {
+    scroll-margin-top: 16vh;
+}
 body{
     background-color: var(--color-BG);
 }
