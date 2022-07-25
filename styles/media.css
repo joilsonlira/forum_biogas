@@ -58,6 +58,10 @@
         
     }
 
+    .menu_item{
+        width: 90%;
+    }
+
     .hamburger{
         display: block;
         z-index: 1;
