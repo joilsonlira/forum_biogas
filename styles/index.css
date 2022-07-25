@@ -206,6 +206,7 @@ body{
 }
 .section_header h2{
     margin-left: 8px;
+    margin-bottom: 0;
 }
 .about_header img{
     width: auto;
