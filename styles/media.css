@@ -107,6 +107,9 @@
     }
 
     /*########### ABOUT ###############*/
+    .section_header{
+        border: none;
+    }
     .about{
         flex-wrap: wrap;
         justify-content: center;
