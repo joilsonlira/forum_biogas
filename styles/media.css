@@ -39,7 +39,7 @@
     .main_nav{
         position: fixed;
         flex-direction: column;
-        left: -100%;
+        left: -115%;
         top: 70px;
         gap: 0;
 
