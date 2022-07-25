@@ -134,7 +134,7 @@
     .porque_patrocinador{
         width: 100%;
         height: auto;
-        line-height: 1.2rem;
+        line-height: auto;
         font-size: 4vw;
         margin-top: var(--standart-padding-margin);
         padding: var(--standart-padding-margin);
