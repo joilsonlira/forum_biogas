@@ -59,9 +59,9 @@ body{
     'PATROCINADOR'
     'FOOTER'
     ;
-    background-color: var(--color-BG);
     width: 100%;
     height: auto;
+    background-color: var(--color-BG);
 }
 .main_header{
     position: fixed;
@@ -361,8 +361,7 @@ footer{
   /* Modal Content/Box */
 .modal-content {
     margin: auto auto; /* 15% from the top and centered */
-    /* width: 30vw; */
-    width: 100%;
+    width: 30vw;
     height: auto; /* Could be more or less, depending on screen size */
 }
 /* .modal_form_contato{
