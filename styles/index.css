@@ -44,7 +44,10 @@ body{
     font-weight: bold;
     background-color: var(--color-MAIN);
 }
-
+.ativo_scroll{
+    transition: 500ms ease-in-out;
+    box-shadow: rgba(0,0,0,0.4) 0px 2px 6px 0px;
+}
 .endereco{
     font-weight: 400;
     font-size: 20px;
@@ -111,6 +114,8 @@ body{
         width: 25px;
         height: 3px;
         border-radius: 50px;
+        /* box-shadow: inset rgba(0,0,0,0.4) 2px 1px 1px 0px; */
+        box-shadow: rgba(0,0,0,0.4) 1px 2px 0px 0px;
         margin: 5px auto;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;

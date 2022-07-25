@@ -29,3 +29,11 @@ document.querySelectorAll(".nav_link").forEach(n => n.addEventListener("click", 
     hamburger.classList.remove("active");
     nav_menu.classList.remove("active");
 }))
+
+//################### MENU_ITEM_SCROLL
+const menu_bar = document.querySelector('.main_header');
+
+function active_scroll(){
+    menu_bar.classList.toggle('ativo_scroll', scrollY > 0);
+}
+window.addEventListener('scroll', active_scroll);
