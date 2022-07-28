@@ -287,9 +287,9 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    gap: 40px 10px;
+    gap: 40px 40px;
     margin: 0 auto;
-    width: 90%;
+    max-width: 1366px;
     height: auto;
 }
 .gallery_box{
@@ -306,7 +306,7 @@ body{
     transition: 500ms ease-in-out;
     width: 400px;
     height: auto;
-    filter: grayscale(1);
+    filter: grayscale(.8);
 }
 .gallery .gallery_box:hover{
     cursor: pointer;

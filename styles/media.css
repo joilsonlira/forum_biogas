@@ -1,12 +1,13 @@
 @media screen and (min-width: 1367px){
     .main_content{
-    max-width: 1366px;
-    margin: 0 auto;
-    box-shadow: rgba(9, 18, 68, 0.1) 0px 0px 15px 5px, rgba(0, 0, 0, 0.3) 0px 0px 10px 5px;
+    /* max-width: 1366px;
+    margin: 0 auto; */
+    /* box-shadow: rgba(9, 18, 68, 0.1) 0px 0px 15px 5px, rgba(0, 0, 0, 0.3) 0px 0px 10px 5px; */
     }
 
     .main_header{
-    width: 1366px;
+    /* width: 1366px; */
+    width: 100%px;
     }
     .start{
         height: auto;
@@ -16,17 +17,17 @@
         width: 30%;
     }
     .information h1{
-        font-size: 3.1vw;
+        font-size: 2vw;
     }
     .endereco_icon img{
-        width: 5vw;
+        width: 2vw;
     }
 
     .data p{
-        font-size: 3.6vw;
+        font-size: 2.5vw;
     }
     .data_meio p{
-        font-size: 4.3vw;
+        font-size: 3vw;
     }
 
     .about{
