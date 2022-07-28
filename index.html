@@ -26,7 +26,7 @@
             <nav class="main_nav">
                 <ul class="menu">
                     <li class="menu_item ativo"><a href="#about" class="nav_link">quem somos</a></li>
-                    <li class="menu_item" style="display: none;"><a href="#" class="nav_link">edições anteriores</a></li>
+                    <li class="menu_item"><a href="#gallery" class="nav_link">edições anteriores</a></li>
                     <li class="menu_item" style="display: none;"><a href="#" class="nav_link">Programação</a></li>
                     <li class="menu_item"><a href="#patrocinador" class="nav_link">seja um patrocinador</a></li>
                     <li class="menu_item" onclick="open_modal('modal_contato')"><a href="#faleconosco" class="nav_link">Fale conosco</a></li>
@@ -106,7 +106,11 @@
             <video poster="#">
                 <source src="#">
             </video>
-            <section class="gallery">
+            <section class="gallery" id="gallery">
+                <header class="section_header">
+                    <img src="./components/images/icon_header.png" alt="">
+                    <h2>Galeria</h2>
+                </header>
                 <div class="gallery_container">
                     <article class="gallery_box">
                         <div class="box_image">

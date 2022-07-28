@@ -44,7 +44,7 @@
         position: fixed;
         flex-direction: column;
         right: -115%;
-        top: 100px;
+        top: var(--header-initial-HEIGHT);
         gap: 15px;
 
         padding: 15px;
@@ -139,6 +139,15 @@
     }
     .about_information{
         width: 100%;
+    }
+
+    /*############ EDIÇÕES ANTERIORES ###########*/
+    .gallery{
+        height: auto;
+    }
+    .gallery_box{
+        width: 150px;
+        height: 150px;
     }
 
     /*################ PATROCINADOR #############*/
