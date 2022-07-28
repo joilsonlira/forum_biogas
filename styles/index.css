@@ -315,12 +315,13 @@ body{
     height: auto;
     filter: grayscale(.8);
 }
-.gallery .gallery_box:hover{
+.box_gallery .gallery_box:hover{
     cursor: pointer;
 }
-.gallery img:hover{
+.box_image img:hover{
     width: 295px;
     filter: grayscale(0);
+    filter: saturate(1);
 }
 
 
