@@ -349,9 +349,7 @@ iframe{
     width: 100%;
     height: 100vh;
 }
-.programacao_container header{
-    margin: 0;
-}
+
 .programacao_start{
     display: flex;
     flex-direction: column;
