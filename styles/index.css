@@ -579,6 +579,9 @@ footer{
     color: white;
     background-color: var(--color-MAIN);
 }
+#modal_image .modal-content > button:hover{
+    cursor: pointer;
+}
 #modal_img{
     width: 60vw;
 }
