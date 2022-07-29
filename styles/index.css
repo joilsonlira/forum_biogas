@@ -326,12 +326,12 @@ iframe{
     width: 400px;
     height: auto;
     filter: grayscale(100%);
+    transition: all linear .3s;
 }
 .box_gallery .gallery_box:hover{
     cursor: pointer;
 }
 .box_image img:hover{
-    transition: all linear .3s;
     transform: scale(1.2);
     filter: grayscale(0%);
 }
