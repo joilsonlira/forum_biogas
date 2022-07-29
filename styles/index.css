@@ -444,8 +444,8 @@ footer{
     z-index: 1; /* Sobre todos os demais elementos */
     left: 0;
     top: 0;
-    width: 100%; /* pega 100% da largura */
-    height: 100%; /* pega 100% da altura */
+    width: 100vw; /* pega 100% da largura */
+    height: 100vh; /* pega 100% da altura */
     overflow: auto; /*Se precisar de scroll*/
     background-color: rgb(0,0,0); /* Cor de fundo */
     background-color: rgba(0,0,0,0.4); /* cor de fundo com opacidade */
@@ -453,13 +453,26 @@ footer{
 
   /* Modal Content/Box */
 .modal-content {
-    margin: auto auto; /* 15% from the top and centered */
+    display: flex;
+    align-items: center;
+    margin: 0 auto; 
     width: 30vw;
-    height: auto; /* Could be more or less, depending on screen size */
+    height: 100vh;
 }
-/* .modal_form_contato{
+#modal_image .modal-content{
+    width: auto;
+    /* margin: 0 0 0 0; */
+}
+#modal_image .modal-content > button{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    padding: 0 .2rem;
+}
+#modal_img{
+    width: 60vw;
+}
 
-} */
 .modal_form{
     display: block;
     justify-content: center;

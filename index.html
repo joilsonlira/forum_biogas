@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./styles/media.css">
     <link rel="shortcut icon" href="./components/images/favicon.png" type="image/x-icon">
 
-    <script src="./scripts/js/index.js" defer></script>
 
     <title>Fórum ABiogas</title>
 </head>
@@ -114,35 +113,35 @@
                 <div class="gallery_container">
                     <article class="gallery_box">
                         <div class="box_image">
-                            <img class="image selected" src="./components/images/gallery_images/DAN-138.jpg" alt="">
+                            <img class="image" src="./components/images/gallery_images/DAN-138.jpg" alt="">
                         </div>
                     </article>
                     <article class="gallery_box">
-                        <div class="box_image"><img src="./components/images/gallery_images/DAN-153.jpg" alt=""></div>
+                        <div class="box_image"><img class="image" src="./components/images/gallery_images/DAN-153.jpg" alt=""></div>
                     </article>
                     <article class="gallery_box">
-                        <div class="box_image"><img src="./components/images/gallery_images/DAN-193.jpg" alt=""></div>
+                        <div class="box_image"><img class="image" src="./components/images/gallery_images/DAN-193.jpg" alt=""></div>
                     </article>
                     <article class="gallery_box">
-                        <div class="box_image"><img src="./components/images/gallery_images/DAN-263.jpg" alt=""></div>
+                        <div class="box_image"><img class="image" src="./components/images/gallery_images/DAN-263.jpg" alt=""></div>
                     </article>
                     <article class="gallery_box">
-                        <div class="box_image"><img src="./components/images/gallery_images/DAN-278.jpg" alt=""></div>
+                        <div class="box_image"><img class="image" src="./components/images/gallery_images/DAN-278.jpg" alt=""></div>
                     </article>
                     <article class="gallery_box">
-                        <div class="box_image"><img src="./components/images/gallery_images/DAN-304.jpg" alt=""></div>
+                        <div class="box_image"><img class="image" src="./components/images/gallery_images/DAN-304.jpg" alt=""></div>
                     </article>
                     <article class="gallery_box">
-                        <div class="box_image"><img src="./components/images/gallery_images/DAN-307.jpg" alt=""></div>
+                        <div class="box_image"><img class="image" src="./components/images/gallery_images/DAN-307.jpg" alt=""></div>
                     </article>
                     <article class="gallery_box">
-                        <div class="box_image"><img src="./components/images/gallery_images/DAN-315.jpg" alt=""></div>
+                        <div class="box_image"><img class="image" src="./components/images/gallery_images/DAN-315.jpg" alt=""></div>
                     </article>
                     <article class="gallery_box">
-                        <div class="box_image"><img src="./components/images/gallery_images/DAN-82.jpg" alt=""></div>
+                        <div class="box_image"><img class="image" src="./components/images/gallery_images/DAN-82.jpg" alt=""></div>
                     </article>
                     <article class="gallery_box">
-                        <div class="box_image"><img src="./components/images/gallery_images/DAN-95.jpg" alt=""></div>
+                        <div class="box_image"><img class="image" src="./components/images/gallery_images/DAN-95.jpg" alt=""></div>
                     </article>
                 </div>
             </section>
@@ -266,13 +265,20 @@
             </section>
         </footer>
     </main>
+    <div id="modal_image" class="modal">
+        <div class="modal-content">
+            <button class="btn_close" onclick="close_modal('modal_image')" ><img src="./components/images/fechar.png" alt="Fechar formulario"></button>
+            <img src="" id="modal_img">
+        </div>
+        
+    </div>
     <div id="modal_patrocinar" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
             <form class="modal_form" action="scripts/php/patrocinador_mailer.php" method="post">
                 <div class="header_modal">
                     <h2>QUERO SER UM PATROCINADOR</h2>
-                    <button class="btn_motal_close" onclick="close_modal('modal_patrocinar')" ><img src="./components/images/fechar.png" alt="Fechar formulario"></input>
+                    <button class="btn_motal_close" onclick="close_modal('modal_patrocinar')" ><img src="./components/images/fechar.png" alt="Fechar formulario"></button>
                 </div>
             
                 <input type="text" name="nome_patrocinador" id="nome_patrocinador" placeholder="Nome" required maxlength="50">
@@ -299,5 +305,6 @@
             </form>
         </div>
     </div>
+    <script src="./scripts/js/index.js"></script>
 </body>
 </html>

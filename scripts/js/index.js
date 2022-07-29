@@ -37,3 +37,30 @@ function active_scroll(){
     menu_bar.classList.toggle('ativo_scroll', scrollY > 0);
 }
 window.addEventListener('scroll', active_scroll);
+
+//modal image
+let images = document.querySelectorAll(".image");
+let modal = document.querySelector(".modal");
+let modal_img = document.querySelector("#modal_img");
+let src_val = "";
+
+for(let i = 0; i < images.length; i++){
+    images[i].addEventListener('click', function(){
+
+        src_val = images[i].getAttribute('src');
+        modal_img.setAttribute('src', src_val);
+        // modal.classList.toggle('active')
+        modal.style.display = 'flex';
+
+    });
+}
+
+
+
+
+
+
+
+
+
+
