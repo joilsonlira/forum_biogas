@@ -49,7 +49,6 @@ for(let i = 0; i < images.length; i++){
 
         src_val = images[i].getAttribute('src');
         modal_img.setAttribute('src', src_val);
-        // modal.classList.toggle('active')
         modal.style.display = 'flex';
 
     });

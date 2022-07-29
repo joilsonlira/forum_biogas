@@ -307,21 +307,19 @@ body{
     width: 200px;
     height: 200px;
     overflow: hidden;
-    transition: 250ms ease-in-out;
 }
 .gallery_box img{
-    transition: 500ms ease-in-out;
     width: 400px;
     height: auto;
-    filter: grayscale(.8);
+    filter: grayscale(100%);
 }
 .box_gallery .gallery_box:hover{
     cursor: pointer;
 }
 .box_image img:hover{
-    width: 295px;
-    filter: grayscale(0);
-    filter: saturate(1);
+    transition: all linear .3s;
+    transform: scale(1.2);
+    filter: grayscale(0%);
 }
 
 
@@ -449,6 +447,7 @@ footer{
     overflow: auto; /*Se precisar de scroll*/
     background-color: rgb(0,0,0); /* Cor de fundo */
     background-color: rgba(0,0,0,0.4); /* cor de fundo com opacidade */
+    transition: display 1s ease-in-out;
 }
 
   /* Modal Content/Box */
@@ -459,6 +458,7 @@ footer{
     width: 30vw;
     height: 100vh;
 }
+
 #modal_image .modal-content{
     width: auto;
     /* margin: 0 0 0 0; */
