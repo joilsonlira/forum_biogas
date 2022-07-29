@@ -90,6 +90,9 @@ body{
     padding: 0px var(--standart-padding-margin);
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.6111) 0%, rgba(8, 35, 51, 0.5166) 100%), #29404D;
 }
+.logo{
+    height: 70%;
+}
 .main_nav{
     width: auto;
     padding-bottom: 5px;
