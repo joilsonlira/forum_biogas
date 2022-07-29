@@ -465,9 +465,19 @@ footer{
 }
 #modal_image .modal-content > button{
     position: absolute;
-    top: 10%;
-    right: 10%;
-    padding: 0 .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 9%;
+    right: 21%;
+    font-size: 2vw;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50px;
+    padding: 4px;
+    color: white;
+    background-color: var(--color-MAIN);
 }
 #modal_img{
     width: 60vw;
