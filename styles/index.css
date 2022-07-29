@@ -59,7 +59,7 @@ body{
 }
 .main_content{
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas: 
     'HEADER'
     'START'
@@ -73,7 +73,6 @@ body{
     height: auto;
     background-color: var(--color-BG);
     font-family: 'gotham';
-
 }
 .main_header{
     z-index: 1;
@@ -233,6 +232,8 @@ body{
     height: auto;
     text-transform: uppercase;
     font-weight: bold;
+    /* padding-bottom: .5rem;
+    border-bottom: 1px solid var(--color-MAIN); */
     color: var(--color-MAIN);
     margin: var(--standart-padding-margin) 0;
 }
@@ -341,7 +342,91 @@ iframe{
 /*############## PROGRAMACAO ################*/
 .programacao_container{
     grid-area: PROGRAMACAO;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.programacao_container header{
+    margin: 0;
+}
+.programacao_start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 28px;
+}
+.programacao_start span{
+    text-transform: uppercase;
+    color: var(--color-MAIN);
+    font-weight: bold;
+}
+.programacao_start p, .programacao_start h2{
+    font-size: 1.5em;
+}
+.programacao_start p, .programacao_start h2, .programacao_start button{
+    text-align: center;
+    width: 60vw;
+    color: white;
+}
+.programacao_start button{
+    border: none;
+    font-size: 1em;
+    width: auto;
+    background-color: var(--color-MAIN);
+}
+.hotel_container header{
+    margin: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px inset white;
+}
+.hotel_container{
+    gap: 5vh;
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2% 2% 2%;
+}
+.hotel_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+.hotel a, .hotel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.hotel a img{
+    margin-right: .5rem;
+}
+.hotel{
+    width: auto;
+    padding: 1rem;
+    font-size: 1.5em;
+    font-weight: bolder;
+    border-radius: 50px;
+    background-color: white;
+    transition: all 150ms ease-in-out;
+}
+.hotel:hover{
+    color: white;
+    background-color: var(--color-MAIN);
+    transform: scale(1.1);
+}
+.programacao_order{
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    height: auto;
 }
 
 /*############# PATROCINADOR ################*/
@@ -358,7 +443,7 @@ iframe{
     border: none;
 }
 .patrocinador_start{
-    max-width: 1223px;
+    /* max-width: 1223px; */
     height: auto;
 }
 .porque_patrocinador{
@@ -379,6 +464,7 @@ iframe{
     font-size: 20px;
     padding: .4rem 2rem;
 }
+
 .cota{
     display: none;
 }
