@@ -157,7 +157,12 @@
         width: 150px;
         height: 150px;
     }
-
+    .hotel_box{
+        width: 100%;
+    }
+    .hotel{
+        width: 100%;
+    }
     /*################ PATROCINADOR #############*/
     .porque_patrocinador{
         width: 100%;

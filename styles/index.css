@@ -37,7 +37,12 @@ body{
     cursor: pointer;
     color: var(--color-LIGTH);
     background-color: var(--color-MAIN);
+    transition: all 150ms linear;
 }
+.btn:hover{
+    box-shadow: inset rgba(255, 38, 0, 0.8) 0px 0px 0px 1000px;
+}
+
 .ativo{
     border-radius: 50px;
     padding: .4rem;
@@ -112,7 +117,7 @@ body{
     text-align: center;
     transition: 500ms;
     transform: scaleX(1.1);
-    transition: 500ms ease-in-out;
+    transition: 100ms ease-in-out;
     border-bottom: 1px inset var(--color-MAIN);
 }
 
