@@ -383,7 +383,7 @@ iframe{
     color: white;
 }
 .programacao_start button{
-    border: none;
+    border: flex;
     font-size: 1em;
     width: auto;
     background-color: var(--color-MAIN);
@@ -433,12 +433,44 @@ iframe{
     background-color: var(--color-MAIN);
     transform: scale(1.1);
 }
-.programacao_order{
-    display: none;
+.programacao{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;    
     height: auto;
+}
+.card_palestrante{
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 1rem;
+    width: 310px;
+    height: 130px;
+    background-color: #DBDBDB;
+    overflow: hidden;
+    text-overflow: clip;
+    text-overflow: ellipsis;
+    text-overflow: '...';
+    /* white-space: nowrap; */
+}
+.foto_palestrante{
+    width: 40%;
+    height: auto;
+    margin-right: 1rem;
+}
+.foto_palestrante img{
+    width: 100%;
+    height: auto;
+}
+.conten_palestrante{
+    width: 60%;
+    font-size: .9em;
+}
+.conten_palestrante .nome{
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: var(--color-MAIN);
 }
 
 /*############# PATROCINADOR ################*/
