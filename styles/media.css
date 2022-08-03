@@ -163,6 +163,16 @@
     .hotel{
         width: 100%;
     }
+    /*################ PROGRAMAÇÃO #############*/
+    .programacao_start p, .programacao_start h2{
+        width: 90%;
+        text-align: justify;
+        font-size: 1em;
+    }
+    .programacao_start button{
+        font-size: .6em;
+        margin-bottom: 30px;
+    }
     /*################ PATROCINADOR #############*/
     .porque_patrocinador{
         width: 100%;
