@@ -132,6 +132,11 @@
     /*########### ABOUT ###############*/
     .section_header{
         border: none;
+        font-size: 2.6vw;
+    }
+    .section_header img{
+        width: auto;
+        height: 60%;
     }
     .about{
         flex-wrap: wrap;
@@ -147,6 +152,7 @@
     }
     .about_information{
         width: 100%;
+        padding: 0 0 0 0;
     }
 
     /*############ EDIÇÕES ANTERIORES ###########*/
@@ -199,6 +205,10 @@
     }
     .social_icon img{
         width: 8vw;
+    }
+    .abiogas ,.faleconosco_container, .social_container{
+        justify-content: center;
+        width: 100%;
     }
 
     /*############# MODAL #################*/

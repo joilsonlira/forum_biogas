@@ -48,6 +48,7 @@ body{
     padding: .4rem;
     font-size: 13px;
     font-weight: bold;
+
     background-color: var(--color-MAIN);
 }
 .ativo_scroll{
@@ -58,6 +59,12 @@ body{
     font-weight: 400;
     font-size: 20px;
     padding: .5rem;
+}
+.inscrevase_container{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    column-gap: 30px;
 }
 .btn_inscrevase{
     width: 250px;
@@ -471,7 +478,14 @@ iframe{
 }
 
 .cota{
-    display: none;
+    display: flex;
+    flex-direction: column;
+}
+.cota_container{
+    height: 30vh;
+}
+.patrocinadores_container{
+    height: auto;
 }
 
 /*############### FOOTER #####################*/
@@ -489,7 +503,15 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 30%;
     height: 100%;
+}
+.abiogas{
+    justify-content: start;
+}
+.faleconosco_container{justify-content: center;}
+.social_container{
+    justify-content: end;
 }
 .faleconosco{
     padding: .5rem 1rem;
