@@ -79,6 +79,16 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .inscrevase_container{
+        width: 100%;
+        justify-content: center;
+        row-gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .inscrevase_container button{
+        width: 100%;
+    }
     .start{
         flex-wrap: wrap;
         height: auto;
@@ -126,7 +136,7 @@
     }
     .endereco{
         margin: 15px auto 0px auto;
-        width: 70vw;
+        width: 100%;
     }
 
     /*########### ABOUT ###############*/
