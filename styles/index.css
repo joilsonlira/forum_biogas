@@ -183,7 +183,7 @@ body{
 .information h1{
     text-align: justify;
     font-family: gotham-bold;
-    font-size: 3.1vw;
+    font-size: 3.2vw;
     color: white;
     text-align: left;
 }
@@ -372,6 +372,7 @@ iframe{
     justify-content: center;
     align-items: center;
     line-height: 28px;
+    padding: 2rem 0;
 }
 .programacao_start span{
     text-transform: uppercase;
@@ -531,10 +532,13 @@ iframe{
 }
 
 .patrocinador_logo{
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 150px;
-    height: auto;
+
 }
+
 .patrocinador_logo img{
     width: 100%;
     height: auto;
