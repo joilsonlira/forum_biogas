@@ -181,8 +181,9 @@ body{
     width: 53%;
 }
 .information h1{
+    text-align: justify;
     font-family: gotham-bold;
-    font-size: 3vw;
+    font-size: 3.1vw;
     color: white;
     text-align: left;
 }
@@ -191,7 +192,7 @@ body{
 }
 .destaque{
     font-family: 'gotham-bold';
-    font-size: 6vw;
+    font-size: 6.5vw;
 }
 .data_container{
     display: flex;
@@ -502,12 +503,15 @@ iframe{
     border-radius: 4px;
     background-color: #eee;
 }
+.porque_patrocinador p{
+    margin: 28px 0;
+}
 .porque_patrocinador span{
     font-family: gotham-bold;
     font-weight: bold;
 }
 .porque_patrocinador button{
-    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 20px;
     padding: .4rem 2rem;
 }
@@ -520,6 +524,19 @@ iframe{
     height: 30vh;
 }
 .patrocinadores_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+}
+
+.patrocinador_logo{
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+}
+.patrocinador_logo img{
+    width: 100%;
     height: auto;
 }
 
