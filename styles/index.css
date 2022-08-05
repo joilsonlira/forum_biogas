@@ -63,7 +63,7 @@ body{
 .inscrevase_container{
     display: flex;
     width: 100%;
-    justify-content: left;
+    justify-content: center;
     column-gap: 30px;
 }
 .btn_inscrevase{
@@ -164,7 +164,7 @@ body{
     width: 100%;
     height: 100%;
 }
-.information h1, h2, p, button{
+.information h1,.information h2,.information p,.information button{
     margin-bottom: var(--standart-padding-margin);
 }
 .information h2{
@@ -185,6 +185,9 @@ body{
     font-size: 3vw;
     color: white;
     text-align: left;
+}
+.information button i{
+    font-size: .8em;
 }
 .destaque{
     font-family: 'gotham-bold';
