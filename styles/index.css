@@ -393,6 +393,82 @@ iframe{
     width: auto;
     background-color: var(--color-MAIN);
 }
+/*############### PROGRAMAÇÃO & PAINEL #############*/
+.programacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    width: 80%;    
+    height: auto;
+}
+.programacao_content{
+    width: 100%;
+}
+.painel{
+    width: 100%;
+    height: auto;
+}
+.painel .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+.title_painel{
+    color: white;
+}
+.painel_header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+    width: 100%;
+    padding: 1rem 0;
+    /* background-color: #ccc; */
+    border-bottom: 2px white solid;
+
+}
+.horario{
+    color: var(--color-MAIN);
+}
+.card_palestrante{
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 1rem;
+    width: 310px;
+    height: 130px;
+    background-color: #DBDBDB;
+    overflow: hidden;
+    text-overflow: clip;
+    text-overflow: ellipsis;
+    text-overflow: '...';
+    /* white-space: nowrap; */
+}
+.foto_palestrante{
+    width: 40%;
+    height: auto;
+    margin-right: 1rem;
+}
+.foto_palestrante img{
+    width: 100%;
+    height: auto;
+}
+.conten_palestrante{
+    width: 60%;
+    font-size: .9em;
+}
+.conten_palestrante .nome{
+    text-transform: capitalize;
+    font-size: 1.5em;
+    width: 100%;
+    font-weight: bolder;
+    color: var(--color-MAIN);
+}
+
 .hotel_container header{
     margin: 0;
     padding-bottom: 1rem;
@@ -438,45 +514,7 @@ iframe{
     background-color: var(--color-MAIN);
     transform: scale(1.1);
 }
-.programacao{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;    
-    height: auto;
-}
-.card_palestrante{
-    display: flex;
-    align-items: flex-start;
-    justify-content: start;
-    padding: 1rem;
-    width: 310px;
-    height: 130px;
-    background-color: #DBDBDB;
-    overflow: hidden;
-    text-overflow: clip;
-    text-overflow: ellipsis;
-    text-overflow: '...';
-    /* white-space: nowrap; */
-}
-.foto_palestrante{
-    width: 40%;
-    height: auto;
-    margin-right: 1rem;
-}
-.foto_palestrante img{
-    width: 100%;
-    height: auto;
-}
-.conten_palestrante{
-    width: 60%;
-    font-size: .9em;
-}
-.conten_palestrante .nome{
-    text-transform: capitalize;
-    font-weight: bolder;
-    color: var(--color-MAIN);
-}
+
 
 /*############# PATROCINADOR ################*/
 .patrocinador{
