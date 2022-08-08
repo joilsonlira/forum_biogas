@@ -454,8 +454,9 @@ iframe{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
-.card_palestrante:hover .conten_palestrante .nome::before{
+.card_palestrante:hover .conten_palestrante .empresa::after{
     content: '';
     display: flex;
     justify-content: center;
