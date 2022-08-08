@@ -411,7 +411,7 @@ iframe{
 }
 .painel .content{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 20px;
     padding: 1rem;
@@ -440,7 +440,7 @@ iframe{
     justify-content: start;
     padding: 1rem;
     width: 310px;
-    height: 130px;
+    height: 120px;
     background-color: #DBDBDB;
     overflow: hidden;
     text-overflow: clip;
@@ -448,8 +448,14 @@ iframe{
     text-overflow: '...';
     /* white-space: nowrap; */
 }
+.card_palestrante:hover{
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .foto_palestrante{
-    width: 40%;
+    width: 50%;
     height: auto;
     margin-right: 1rem;
 }
@@ -458,7 +464,7 @@ iframe{
     height: auto;
 }
 .conten_palestrante{
-    width: 60%;
+    width: 100%;
     font-size: .9em;
 }
 .conten_palestrante .nome{
