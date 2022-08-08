@@ -441,12 +441,12 @@ iframe{
     padding: 1rem;
     width: 310px;
     height: 120px;
-    background-color: #DBDBDB;
     overflow: hidden;
     text-overflow: clip;
     text-overflow: ellipsis;
     text-overflow: '...';
-    /* white-space: nowrap; */
+    border-radius: 4px;
+    background-color: #DBDBDB;
 }
 .card_palestrante:hover{
     height: auto;
