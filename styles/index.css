@@ -427,8 +427,8 @@ iframe{
     row-gap: 20px;
     width: 100%;
     padding: 1rem 0;
-    /* background-color: #ccc; */
     border-bottom: 2px white solid;
+    /* background-color: #ccc; */
 
 }
 .horario{
@@ -438,6 +438,7 @@ iframe{
     display: flex;
     align-items: flex-start;
     justify-content: start;
+    line-height: 26px;
     padding: 1rem;
     width: 310px;
     height: 120px;
@@ -446,12 +447,40 @@ iframe{
     text-overflow: ellipsis;
     text-overflow: '...';
     border-radius: 4px;
-    background-color: #DBDBDB;
+    background-color: #ffffff;
 }
 .card_palestrante:hover{
     height: auto;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+}
+.card_palestrante:hover .conten_palestrante .nome::before{
+    content: '';
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    align-items: center;
+    width: 100%;
+    height: 2px;
+    margin-bottom: .5rem;
+    border-radius: 50px;
+    animation: crescer 500ms forwards;
+    background-color: #CA2005;
+}
+@keyframes crescer {
+    0%{
+        width: 0;
+        background-color: var(--color-BG);
+    }
+    50%{
+        background-color: #fa4225;
+    }
+    100%{
+        width: 100%;
+        background-color: var(--color-MAIN);
+    }
 }
 
 .foto_palestrante{
