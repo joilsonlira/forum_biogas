@@ -652,14 +652,14 @@ iframe{
 }
 
 .tag_box{
+    gap: 10px;
     width: 100%;
     width: auto;
     height: auto;
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .tag{
     display: flex;
