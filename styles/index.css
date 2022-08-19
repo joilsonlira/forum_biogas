@@ -634,7 +634,6 @@ iframe{
     height: 2px;
     animation: crescer 500ms forwards;
 }
-
 .patrocinador_logo img{
     padding: .5rem;
     width: 100%;
@@ -646,11 +645,15 @@ iframe{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     height: auto;
     margin-top: 2rem;
 }
-
+.tag_container h2{
+    color: white;
+    margin-bottom: 1rem;
+}
 .tag_box{
     gap: 10px;
     width: 100%;
