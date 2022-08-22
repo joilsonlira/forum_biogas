@@ -432,15 +432,13 @@ iframe{
     color: white;
 }
 .painel_header{
+    width: 100%;
     display: flex;
+    row-gap: 20px;
+    padding: 1rem 0;
     flex-direction: column;
     justify-content: space-between;
-    row-gap: 20px;
-    width: 100%;
-    padding: 1rem 0;
     border-bottom: 2px white solid;
-    /* background-color: #ccc; */
-
 }
 .horario{
     color: var(--color-MAIN);
@@ -474,9 +472,9 @@ iframe{
     height: 2px;
     display: flex;
     color: white;
+    margin: .5rem 0;
     border-radius: 50px;
     align-items: center;
-    margin: .5rem 0;
     justify-content: center;
     text-transform: uppercase;
     background-color: #CA2005;
@@ -562,19 +560,19 @@ iframe{
 }
 .hotel:hover{
     color: white;
-    background-color: var(--color-MAIN);
     transform: scale(1.1);
+    background-color: var(--color-MAIN);
 }
 
 
 /*############# PATROCINADOR ################*/
 .patrocinador{
-    grid-area: PATROCINADOR;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-area: PATROCINADOR;
+    justify-content: center;
     padding: 0 var(--standart-padding-margin);
 }
 .patrocinador .section_header{
@@ -597,12 +595,12 @@ iframe{
     margin: 28px 0;
 }
 .porque_patrocinador span{
-    font-family: gotham-bold;
     font-weight: bold;
+    font-family: gotham-bold;
 }
 .porque_patrocinador button{
-    margin-bottom: 20px;
     font-size: 20px;
+    margin-bottom: 20px;
     padding: .4rem 2rem;
 }
 
@@ -614,19 +612,19 @@ iframe{
     height: 30vh;
 }
 .patrocinadores_container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .patrocinador_logo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 150px;
+    display: flex;
     height: 100px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .patrocinador_logo:hover::after{
     content: '';
@@ -635,24 +633,24 @@ iframe{
     animation: crescer 500ms forwards;
 }
 .patrocinador_logo img{
-    padding: .5rem;
     width: 100%;
     height: auto;
+    padding: .5rem;
 }
 /*################ TAGS ######################*/
 .tag_container{
-    grid-area: TAGS;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     width: 100%;
     height: auto;
+    display: flex;
+    grid-area: TAGS;
     margin-top: 2rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .tag_container h2{
-    color: white;
     margin-bottom: 1rem;
+    color: var(--color-MAIN);
 }
 .tag_box{
     gap: 10px;
@@ -676,26 +674,28 @@ iframe{
 }
 /*############### FOOTER #####################*/
 footer{
-    grid-area: FOOTER;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
     height: auto;
-    margin-top: var(--standart-padding-margin);
+    display: flex;
+    grid-area: FOOTER;
+    align-items: center;
+    justify-content: space-between;
     padding: var(--standart-padding-margin);
+    margin-top: var(--standart-padding-margin);
 }
 .abiogas ,.faleconosco_container, .social_container{
+    width: 30%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30%;
-    height: 100%;
 }
 .abiogas{
     justify-content: start;
 }
-.faleconosco_container{justify-content: center;}
+.faleconosco_container{
+    justify-content: center;
+}
 .social_container{
     justify-content: end;
 }
@@ -704,10 +704,10 @@ footer{
     margin: 0;
 }
 .social_icon{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .social_icon img{
@@ -716,28 +716,28 @@ footer{
 }
 
 .header_modal{
+    width: 100%;
+    height: auto;
     display: flex;
+    margin: 1rem 0;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    margin: 1rem 0;
-    width: 100%;
-    height: auto;
     }
     .header_modal h2{
+        margin: 0;
+        width: 90%;
         font-size: 1rem;
         text-align: left;
-        width: 90%;
-        margin: 0;
     }
 .btn_motal_close{
-    display: flex;
     width: auto;
     height: auto;
     border: none;
+    display: flex;
     padding: .2rem;
-    border-radius: 4px;
     cursor: pointer;
+    border-radius: 4px;
     background-color: transparent;
     }
     .btn_motal_close:hover{
@@ -748,16 +748,16 @@ footer{
     width: 100%;
 }
 
-/* The Modal (background) */
+/*Modal (background) */
 .modal {
-    display: none; /* por padrão é escondido todo o formulario */
-    position: fixed; /* torna fixo */
-    z-index: 1; /* Sobre todos os demais elementos */
-    left: 0;
     top: 0;
+    left: 0;
+    z-index: 1; /* Sobre todos os demais elementos */
     width: 100vw; /* pega 100% da largura */
+    display: none; /* por padrão é escondido todo o formulario */
     height: 100vh; /* pega 100% da altura */
     overflow: auto; /*Se precisar de scroll*/
+    position: fixed; /* torna fixo */
     background-color: rgb(0,0,0); /* Cor de fundo */
     background-color: rgba(0,0,0,0.4); /* cor de fundo com opacidade */
     transition: display 1s ease-in-out;
@@ -765,11 +765,11 @@ footer{
 
   /* Modal Content/Box */
 .modal-content {
-    display: flex;
-    align-items: center;
-    margin: 0 auto; 
     width: 30vw;
+    display: flex;
     height: 100vh;
+    margin: 0 auto; 
+    align-items: center;
 }
 
 #modal_image .modal-content{

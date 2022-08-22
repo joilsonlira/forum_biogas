@@ -32,7 +32,6 @@ document.querySelectorAll(".nav_link").forEach(n => n.addEventListener("click", 
 
 //################### MENU_ITEM_SCROLL
 const menu_bar = document.querySelector('.main_header');
-
 function active_scroll(){
     menu_bar.classList.toggle('ativo_scroll', scrollY > 0);
 }
@@ -43,23 +42,10 @@ let images = document.querySelectorAll(".image");
 let modal = document.querySelector(".modal");
 let modal_img = document.querySelector("#modal_img");
 let src_val = "";
-
 for(let i = 0; i < images.length; i++){
     images[i].addEventListener('click', function(){
-
         src_val = images[i].getAttribute('src');
         modal_img.setAttribute('src', src_val);
         modal.style.display = 'flex';
-
     });
 }
-
-
-
-
-
-
-
-
-
-
