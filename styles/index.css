@@ -619,13 +619,12 @@ iframe{
     height: auto;
 }
 .patrocinadores_container{
+    height: auto;
     display: flex;
+    gap: 20px 20px;
     align-items: center;
     justify-content: center;
-    gap: 20px 20px;
-    height: auto;
 }
-
 .patrocinador_logo{
     width: 150px;
     display: flex;
@@ -633,6 +632,7 @@ iframe{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    /* background-color: white; */
 }
 .patrocinador_logo:hover::after{
     content: '';
