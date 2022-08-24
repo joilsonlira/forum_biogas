@@ -242,7 +242,6 @@ body{
 .data p{
     font-size: 2.5vw;
     font-weight: bold;
-    /* width: 41vw; */
     height: 100%;
     margin: 0;
 }
@@ -253,16 +252,14 @@ body{
 
 /*################ ABOUT ####################*/
 .section_header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: auto;
-    text-transform: uppercase;
+    display: flex;
     font-weight: bold;
-    /* padding-bottom: .5rem;
-    border-bottom: 1px solid var(--color-MAIN); */
+    align-items: center;
+    justify-content: center;
     color: var(--color-MAIN);
+    text-transform: uppercase;
     margin: var(--standart-padding-margin) 0;
 }
 .section_header h2{
@@ -274,13 +271,13 @@ body{
     height: auto;
 }
 .about{
-    grid-area: ABOUT;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'gotham';
     width: 100%;
     height: auto;
+    display: flex;
+    grid-area: ABOUT;
+    align-items: center;
+    font-family: 'gotham';
+    flex-direction: column;
     padding: 0 var(--standart-padding-margin);
 }
 .about_container{
@@ -291,14 +288,14 @@ body{
 .about_information{
     width: 70%;
     font-size: 1.1rem;
-    padding-right: var(--standart-padding-margin);
     color: var(--color-LIGTH);
+    padding-right: var(--standart-padding-margin);
 }
 .about_information p{
+    width: auto;
     margin: 15px 0;
     line-height: 26px;
     text-align: justify;
-    width: auto;
 }
 .about_image{
     width: 30%;
@@ -315,10 +312,10 @@ body{
 
 /*################ ANTERIOR #################*/
 .edicao_anterior{
-    grid-area: EDICAO;
     display: flex;
-    flex-direction: column;
+    grid-area: EDICAO;
     align-items: center;
+    flex-direction: column;
 }
 iframe{
     width: 60%;
@@ -326,30 +323,29 @@ iframe{
 }
 
 .gallery{
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
-    height: auto;
-    /* height: 89vh; */
 }
 .gallery_container{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     gap: 20px 20px;
+    flex-wrap: wrap;
     margin: auto auto;
     max-width: 1100px;
+    align-items: center;
+    justify-content: center;
 }
 .gallery_box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 200px;
+    display: flex;
     height: 200px;
-    overflow: hidden;
     cursor: pointer;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 .gallery_box img{
     width: 400px;
@@ -364,50 +360,50 @@ iframe{
 
 /*############## PROGRAMACAO ################*/
 .programacao_container{
-    grid-area: PROGRAMACAO;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: auto;
+    display: flex;
+    align-items: center;
+    grid-area: PROGRAMACAO;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .programacao_start{
     display: flex;
+    padding: 2rem 0;
+    line-height: 28px;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    line-height: 28px;
-    padding: 2rem 0;
 }
 .programacao_start span{
-    text-transform: uppercase;
-    color: var(--color-MAIN);
     font-weight: bold;
+    color: var(--color-MAIN);
+    text-transform: uppercase;
 }
 .programacao_start p, .programacao_start h2{
     font-size: 1.5em;
 }
 .programacao_start p, .programacao_start h2, .programacao_start button{
-    text-align: center;
     width: 60vw;
     color: white;
+    text-align: center;
 }
 .programacao_start button{
+    width: auto;
     border: flex;
     font-size: 1em;
-    width: auto;
     background-color: var(--color-MAIN);
 }
 /*############### PROGRAMAÇÃO & PAINEL #############*/
 .programacao{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:flex-start;
     width: 80%;    
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
 }
 .programacao_content{
     width: 100%;
@@ -417,12 +413,12 @@ iframe{
     height: auto;
 }
 .painel .content{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
     gap: 20px;
+    display: flex;
     padding: 1rem;
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
 }
 .title_painel{
     color: white;
@@ -441,26 +437,26 @@ iframe{
 }
 .card_palestrante{
     display: flex;
-    align-items: flex-start;
-    justify-content: start;
-    line-height: 26px;
-    padding: 1rem;
     width: 310px;
+    padding: 1rem;
     height: 120px;
     overflow: hidden;
-    text-overflow: clip;
-    text-overflow: ellipsis;
-    text-overflow: '...';
+    line-height: 26px;
     border-radius: 4px;
+    text-overflow: clip;
+    text-overflow: '...';
+    justify-content: start;
+    align-items: flex-start;
+    text-overflow: ellipsis;
     background-color: #ffffff;
 }
 .card_palestrante:hover{
     height: auto;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
+    align-items: center;
+    flex-direction: column;
     transform: scale(1.02);
+    justify-content: center;
 }
 .card_palestrante:hover .conten_palestrante .empresa::after{
     content: '';
@@ -504,11 +500,11 @@ iframe{
     font-size: .9em;
 }
 .conten_palestrante .nome{
-    text-transform: capitalize;
-    font-size: 1em;
     width: 100%;
+    font-size: 1em;
     font-weight: bolder;
     color: var(--color-MAIN);
+    text-transform: capitalize;
 }
 .cargo, .empresa{
     font-size: 1em;
@@ -524,18 +520,18 @@ iframe{
     width: 90%;
     height: auto;
     display: flex;
+    padding: 0 2% 2% 2%;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 2% 2% 2%;
 }
 .hotel_box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    row-gap: 20px;
     width: 100%;
+    display: flex;
+    row-gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .hotel a, .hotel{
     display: flex;
@@ -575,17 +571,16 @@ iframe{
     border: none;
 }
 .patrocinador_start{
-    /* max-width: 1223px; */
     height: auto;
 }
 .porque_patrocinador{
-    margin: 0 auto;
-    padding: 20px 45px 0 45px;
     width: 80%;
     height: auto;
-    border: 1px solid #8f8f8f;
+    margin: 0 auto;
     border-radius: 4px;
     background-color: #eee;
+    padding: 20px 45px 0 45px;
+    border: 1px solid #8f8f8f;
 }
 .porque_patrocinador p{
     margin: 28px 0;
@@ -604,14 +599,31 @@ iframe{
     display: flex;
     flex-direction: column;
 }
+
+/*############## VARIAÇÃO DE TAMANHOS PARA OS LOGOS DE ACORDO COM A COTA DE PATROCINIO ####### */
+.cota .cota_container:nth-child(1) .patrocinadores_container .patrocinador_logo{
+    width: 250px;
+    height: 200px;
+}
+.cota .cota_container:nth-child(2) .patrocinadores_container .patrocinador_logo{
+    width: 200px;
+    height: 150px;
+}
+.cota .cota_container:nth-child(3) .patrocinadores_container .patrocinador_logo{
+    width: 150px;
+    height: 100px;
+}
+/*#############################################################################################*/
+
 .cota_container{
-    height: 30vh;
+    height: auto;
 }
 .patrocinadores_container{
-    height: auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px 20px;
+    height: auto;
 }
 
 .patrocinador_logo{
@@ -637,7 +649,7 @@ iframe{
 .tag_container{
     width: 100%;
     height: auto;
-    display: flex;
+    display: none;
     grid-area: TAGS;
     margin-top: 2rem;
     align-items: center;
@@ -668,6 +680,7 @@ iframe{
     justify-content: center;
     background-color: #CA2005;
 }
+
 /*############### FOOTER #####################*/
 footer{
     width: 100%;
@@ -773,19 +786,19 @@ footer{
     /* margin: 0 0 0 0; */
 }
 #modal_image .modal-content > button{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     top: 9%;
     right: 21%;
-    font-size: 1.2em;
     width: 25px;
+    padding: 4px;
     height: 25px;
     border: none;
-    border-radius: 50px;
-    padding: 4px;
+    display: flex;
     color: white;
+    font-size: 1.2em;
+    position: absolute;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
     background-color: var(--color-MAIN);
 }
 #modal_image .modal-content > button:hover{
@@ -796,21 +809,21 @@ footer{
 }
 
 .modal_form{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem 1rem 1rem;
-    border-radius: 4px;
-    border: 1px solid var(--color-BG);
-    flex-direction: column;
     width: 100%;
+    display: block;
+    border-radius: 4px;
     text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem 1rem 1rem;
+    border: 1px solid var(--color-BG);
     background-color: var(--color-LIGTH);
 }
 .modal_form input, textarea{
-    border-radius: 6px;
     width: 100%;
     padding: .5rem;
+    border-radius: 6px;
     margin-bottom: 1rem;
 }
 
@@ -838,8 +851,6 @@ footer{
 .modal_form input[type="button"],
 .modal_form input[type="submit"]{
     display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     padding: .5rem 1rem;
     border-radius: 50px;
@@ -848,5 +859,7 @@ footer{
     font-size: 1rem;
     font-weight:bold;
     color: white;
+    align-items: center;
+    justify-content: center;
     background-color: var(--color-MAIN);
 }
