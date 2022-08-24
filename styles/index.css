@@ -67,6 +67,7 @@ body{
     column-gap: 30px;
 }
 .btn_inscrevase{
+    padding: .5rem;
     width: 50%;
 }
 .main_content{
@@ -413,7 +414,6 @@ iframe{
     height: auto;
 }
 .painel .content{
-    transition: all 1s linear;
     gap: 20px;
     display: flex;
     padding: 1rem;
@@ -423,6 +423,7 @@ iframe{
 }
 .title_painel{
     color: white;
+    transition: all 1s linear;
 }
 .painel_header{
     width: 100%;
