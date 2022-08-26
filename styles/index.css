@@ -602,6 +602,62 @@ iframe{
     flex-direction: column;
 }
 
+.container_modal_patrocinador{
+    margin: auto auto;
+    padding: 0 1rem;
+    width: 50%;
+    height: 90%;
+    border-radius: 4px;
+    background-color: #DBDBDB;
+    overflow: hidden;
+    overflow-y:scroll;
+}
+.patrocinador_modal_logo{
+    width: 200px;
+    height: 200px;
+}
+.container_modal_patrocinador main{
+    margin-top: 40px;
+}
+.container_modal_patrocinador main p{
+    line-height: 25px;
+    font-size: .9em;
+    margin-bottom: 20px;
+}
+.container_modal_patrocinador header{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 46.5vw;
+    height: 32px;
+    margin-bottom: 20px;
+    background-color: #DBDBDB;
+}
+.patrocinador_modal_botoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.patrocinador_modal_botoes button{
+    border: none;
+    color: white;
+    font-weight: bolder;
+    border-radius: 50px;
+    padding: .5rem 1rem;
+    background: #CA2005;
+}
+.patrocinador_modal_vdeo{
+    width: 100%;
+    height: auto;
+}
+.patrocinador_modal_vdeo video{
+    width: 100%;
+    height: auto;
+}
 /*############## VARIAÇÃO DE TAMANHOS PARA OS LOGOS DE ACORDO COM A COTA DE PATROCINIO ####### */
 .cota .cota_container:nth-child(1) .patrocinadores_container .patrocinador_logo{
     width: 250px;
@@ -627,6 +683,7 @@ iframe{
     align-items: center;
     justify-content: center;
 }
+
 .patrocinador_logo{
     width: auto;
     height: 100px;
@@ -643,7 +700,6 @@ iframe{
     animation: crescer 500ms forwards;
 }
 .patrocinador_logo img{
-    
     width: 100%;
     height: 100%;
     padding: .5rem;
