@@ -605,7 +605,7 @@ iframe{
 .container_modal_patrocinador{
     margin: auto auto;
     padding: 0 1rem;
-    width: 50%;
+    width: 70%;
     height: 90%;
     border-radius: 4px;
     background-color: #DBDBDB;
@@ -630,25 +630,44 @@ iframe{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 46.5vw;
-    height: 32px;
+    width: 60%;
+    padding: .5rem 0;
+    height: 64px;
     margin-bottom: 20px;
     background-color: #DBDBDB;
+}
+.container_modal_patrocinador header img{
+    width: auto;
+    height: 100%;
+}
+.patrocinador_modal_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.patrocinador_modal_logo img{
+    width: 80%;
+    height: auto;
 }
 .patrocinador_modal_botoes{
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    margin-bottom: 40px;
+    height: auto;
+
+    margin: 40px 0;
 }
-.patrocinador_modal_botoes button{
-    border: none;
-    color: white;
-    font-weight: bolder;
-    border-radius: 50px;
+.container_modal_patrocinador main a{
+    width: auto;
+    height: 40px;
     padding: .5rem 1rem;
-    background: #CA2005;
+    /* color: red; */
+    border-radius: 50px;
+    font-weight: bolder;
+    background-color: #8f8f8f;
 }
 .patrocinador_modal_vdeo{
     width: 100%;
@@ -838,6 +857,9 @@ footer{
     height: 100vh;
     margin: 0 auto; 
     align-items: center;
+}
+#modal_image{
+    z-index: 2;
 }
 
 #modal_image .modal-content{
