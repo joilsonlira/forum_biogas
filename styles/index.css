@@ -4,11 +4,11 @@
 *::before{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'gotham', 'gotham-bold', sans-serif;
+    color: inherit;
     list-style: none;
     text-decoration: none;
-    color: inherit;
+    box-sizing: border-box;
+    font-family: 'gotham', 'gotham-bold', sans-serif;
 }
 /* ############################################ */
 
@@ -18,8 +18,8 @@
     --color-MAIN: #CA2005;
     --color-LIGTH: #DBDBDB;
     --main-section-HEIGHT: 89vh;
-    --standart-padding-margin: 30px;
     --header-initial-HEIGHT: 11vh;
+    --standart-padding-margin: 30px;
 }
 /* ############################################ */
 
@@ -613,14 +613,14 @@ iframe{
 }
 
 .container_modal_patrocinador{
-    margin: auto auto;
-    padding: 0 1rem;
     width: 70%;
     height: 90%;
+    padding: 0 1rem;
+    overflow: hidden;
+    margin: auto auto;
+    overflow-y:scroll;
     border-radius: 4px;
     background-color: #DBDBDB;
-    overflow: hidden;
-    overflow-y:scroll;
 }
 .patrocinador_modal_logo{
     width: 200px;
@@ -630,51 +630,49 @@ iframe{
     margin-top: 40px;
 }
 .container_modal_patrocinador main p{
-    line-height: 25px;
     font-size: .9em;
+    line-height: 25px;
     margin-bottom: 20px;
 }
 .container_modal_patrocinador header{
-    position: absolute;
     z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 67%;
-    padding: .5rem 0;
     height: 64px;
+    display: flex;
+    padding: .5rem 0;
+    position: absolute;
     margin-bottom: 20px;
+    align-items: center;
     background-color: #DBDBDB;
+    justify-content: space-between;
 }
 .container_modal_patrocinador header img{
     width: auto;
     height: 100%;
 }
 .patrocinador_modal_logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .patrocinador_modal_logo img{
     width: 80%;
     height: auto;
 }
 .patrocinador_modal_botoes{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     width: 100%;
     height: auto;
-
+    display: flex;
     margin: 40px 0;
+    align-items: center;
+    justify-content: space-around;
 }
 .container_modal_patrocinador main a{
     width: auto;
     height: 40px;
     padding: .5rem 1rem;
-    /* color: red; */
     border-radius: 50px;
     font-weight: bolder;
     background-color: #8f8f8f;
@@ -709,25 +707,25 @@ iframe{
     height: auto;
     display: flex;
     gap: 20px 20px;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .patrocinador_logo{
     width: 150px;
     height: auto;
     display: flex;
+    padding: 1rem;
+    border-radius: 2px;
     object-fit: contain;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
-    background: rgba(255, 255, 255, .1);
     transition: all linear 500ms;
     -moz-transition: all linear 500ms;
+    background: rgba(255, 255, 255, .1);
     -webkit-transition: all linear 500ms;
-    border-radius: 2px;
 }
 .patrocinador_logo a{
     width: auto;
@@ -946,21 +944,21 @@ footer{
     border-color: green;
 }
 .modal_form  textarea{
-    resize: vertical;
     height: 20%;
+    resize: vertical;
 }
 
 .modal_form input[type="button"],
 .modal_form input[type="submit"]{
-    display: flex;
-    cursor: pointer;
-    padding: .5rem 1rem;
-    border-radius: 50px;
-    border-style: none;
     width: auto;
+    display: flex;
+    color: white;
+    cursor: pointer;
     font-size: 1rem;
     font-weight:bold;
-    color: white;
+    border-style: none;
+    padding: .5rem 1rem;
+    border-radius: 50px;
     align-items: center;
     justify-content: center;
     background-color: var(--color-MAIN);
