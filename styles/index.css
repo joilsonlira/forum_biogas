@@ -131,7 +131,6 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-
 .menu_item a{
     height: 20px;
     display: flex;
