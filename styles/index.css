@@ -678,16 +678,16 @@ iframe{
 }
 /*############## VARIAÇÃO DE TAMANHOS PARA OS LOGOS DE ACORDO COM A COTA DE PATROCINIO ####### */
 .cota .cota_container:nth-child(1) .patrocinadores_container .patrocinador_logo{
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
 }
 .cota .cota_container:nth-child(2) .patrocinadores_container .patrocinador_logo{
     width: 200px;
     height: 200px;
 }
 .cota .cota_container:nth-child(3) .patrocinadores_container .patrocinador_logo{
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
 }
 /*#############################################################################################*/
 
@@ -700,10 +700,11 @@ iframe{
     gap: 20px 20px;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .patrocinador_logo{
-    width: 100px;
+    width: 150px;
     height: auto;
     display: flex;
     object-fit: contain;

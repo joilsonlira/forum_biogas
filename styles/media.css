@@ -239,4 +239,7 @@
     .endereco_icon img{
         width: 10vw;
     }
+    section{
+        max-width: 375px;
+    }
 }
