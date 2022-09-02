@@ -712,8 +712,10 @@ iframe{
     justify-content: center;
     padding: 1rem;
     background: rgba(255, 255, 255, .1);
-    transition: all linear 1s;
-    border-radius: 4px;
+    transition: all linear 500ms;
+    -moz-transition: all linear 500ms;
+    -webkit-transition: all linear 500ms;
+    border-radius: 2px;
 }
 .patrocinador_logo a{
     width: auto;
