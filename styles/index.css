@@ -706,7 +706,7 @@ iframe{
 .patrocinadores_container{
     height: auto;
     display: flex;
-    gap: 20px 20px;
+    /* gap: 20px 20px; */
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -714,18 +714,18 @@ iframe{
 
 .patrocinador_logo{
     width: 150px;
-    height: auto;
+    height: 150px;
     display: flex;
     padding: 1rem;
-    border-radius: 2px;
+    /* border-radius: 2px; */
     object-fit: contain;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     transition: all linear 500ms;
     -moz-transition: all linear 500ms;
-    background: rgba(255, 255, 255, .1);
     -webkit-transition: all linear 500ms;
+    background: rgba(255, 255, 255, .1);
 }
 .patrocinador_logo a{
     width: auto;
@@ -883,7 +883,6 @@ footer{
 
 #modal_image .modal-content{
     width: auto;
-    /* margin: 0 0 0 0; */
 }
 #modal_image .modal-content > button{
     top: 9%;
