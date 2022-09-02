@@ -51,5 +51,5 @@ for(let i = 0; i < images.length; i++){
 }
 
 setInterval(function(){
-    location.reload;
-},2000)
+    location.reload();
+},50000)
