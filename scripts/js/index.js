@@ -50,6 +50,6 @@ for(let i = 0; i < images.length; i++){
     });
 }
 
-setInterval(function(){
-    location.reload();
-},50000)
+// setInterval(function(){
+//     location.reload();
+// },50000)
