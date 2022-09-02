@@ -165,13 +165,13 @@ body{
         box-shadow: rgba(0,0,0,0.4) 1px 2px 0px 0px;
     }
 .start{
-    grid-area: START;
+    height: auto;
     display: flex;
+    grid-area: START;
     align-items: center;
     justify-content: space-between;
-    padding: 0 var(--standart-padding-margin);
     margin: var(--header-initial-HEIGHT) 0;
-    height: auto;
+    padding: 0 var(--standart-padding-margin);
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.6111) 0%, rgba(8, 35, 51, 0.5166) 100%), #29404D;
 }
 .logo_start{
@@ -203,11 +203,11 @@ body{
     width: 53%;
 }
 .information h1{
+    color: white;
+    font-size: 3.2vw;
+    text-align: left;
     text-align: justify;
     font-family: gotham-bold;
-    font-size: 3.2vw;
-    color: white;
-    text-align: left;
 }
 .information button i{
     font-size: .8em;
@@ -218,25 +218,25 @@ body{
 }
 .data_container{
     display: flex;
-    flex-direction: column;
     font-family: 'gotham';
+    flex-direction: column;
     margin-bottom: var(--standart-padding-margin);
 }
 .data_content, .data{
     display: flex;
-    align-items: center;
-    font-family: gotham-bold;
     color: white;
     flex-direction: row;
+    align-items: center;
+    font-family: gotham-bold;
 }
 .data_content{
     width: 100%;
     height: auto;
 }
 .endereco_icon{
+    width: auto;
     display: flex;
     align-items: center;
-    width: auto;
 }
 .endereco_icon img{
     margin: 0;
@@ -246,14 +246,14 @@ body{
 .data{
     display: flex;
     justify-content: start;
-    margin: 10px 0px 10px 30px;
     flex-direction: column;
+    margin: 10px 0px 10px 30px;
 }
 .data p{
+    margin: 0;
+    height: 100%;
     font-size: 2.5vw;
     font-weight: bold;
-    height: 100%;
-    margin: 0;
 }
 .data_meio p{
     font-size: 3vw;
