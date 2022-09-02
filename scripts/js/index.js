@@ -49,3 +49,7 @@ for(let i = 0; i < images.length; i++){
         modal.style.display = 'flex';
     });
 }
+
+setInterval(function(){
+    location.reload;
+},2000)
