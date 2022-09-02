@@ -1,3 +1,4 @@
+/* ################ RESET ################## */
 *,
 *::after,
 *::before{
@@ -9,6 +10,9 @@
     text-decoration: none;
     color: inherit;
 }
+/* ############################################ */
+
+/* ################ VARIAVEIS ################ */
 :root{
     --color-BG: #082333;
     --color-MAIN: #CA2005;
@@ -17,6 +21,8 @@
     --standart-padding-margin: 30px;
     --header-initial-HEIGHT: 11vh;
 }
+/* ############################################ */
+
 html{
     scroll-behavior: smooth;
 }
@@ -26,6 +32,7 @@ html{
 body{
     background-color: var(--color-BG);
 }
+/* ################## ESTILO PADRÃO PArA BOTÕES ###################### */
 .btn{
     border: none;
     padding: 1rem;
@@ -42,7 +49,9 @@ body{
 .btn:hover{
     box-shadow: inset rgba(255, 38, 0, 0.8) 0px 0px 0px 1000px;
 }
+/* ################################################################## */
 
+/* ################## estilo para link selecionadno no menu principal */
 .ativo{
     border-radius: 50px;
     padding: .4rem;
@@ -50,6 +59,8 @@ body{
     font-weight: bold;
     background-color: var(--color-MAIN);
 }
+
+/* ################################################################## */
 
 .ativo_scroll{
     transition: 500ms ease-in-out;

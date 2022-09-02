@@ -183,7 +183,7 @@ gravar($corpo."data/hora: ".$agora = date('d/m/Y H:i').";\n");
     <script>console.log({<?php $arr_controle ?>})</script>
     <script>
         setTimeout(function() {
-            window.location.href = "https://forumdobiogas.com.br/";
+            window.location.href = "https://abiogas.org.br/forum-biogas/";
         }, 500);
     </script>
     <script src="../../scripts/js/index.js"></script>
