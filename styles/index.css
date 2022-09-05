@@ -795,9 +795,19 @@ footer{
     align-items: center;
     justify-content: center;
     margin: 10px 0;
+    background-color: #29404D;
 }
 .abiogas{
     justify-content: start;
+}
+.abiogas .logo{
+    display: flex;
+    align-items: center;
+}
+.abiogas .logo img{
+    background-color: #8f8f8f;
+    width: 100%;
+    height: auto;
 }
 .faleconosco_container{
     justify-content: center;
@@ -806,6 +816,7 @@ footer{
     justify-content: end;
 }
 .faleconosco{
+    height: auto;
     padding: .5rem 1rem;
     margin: 0 10px;
 }
