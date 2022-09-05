@@ -44,6 +44,14 @@
         right: 0;
         width: 100%;
     }
+    .logo{
+        padding-top: 0;
+        padding-bottom: 0;
+        /* background-color: aliceblue; */
+    }
+    /* .logo img{
+        background-color: aqua;
+    } */
     .menu{
         position: fixed;
         flex-direction: column;
