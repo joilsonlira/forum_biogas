@@ -224,6 +224,8 @@
         gap:var(--standart-padding-margin);
     }
     .social_icon{
+        display: flex;
+        justify-content: space-between;
         gap: 65px;
     }
     .social_icon{
