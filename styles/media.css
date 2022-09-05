@@ -143,6 +143,7 @@
         margin: 10px 0;
     }
 
+
     /*########### ABOUT ###############*/
     .section_header{
         border: none;
@@ -216,6 +217,9 @@
     }
     .social_icon{
         gap: 65px;
+    }
+    .social_icon{
+        margin: 0 15px;
     }
     .social_icon img{
         width: 8vw;
