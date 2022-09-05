@@ -795,7 +795,6 @@ footer{
     align-items: center;
     justify-content: center;
     margin: 10px 0;
-    background-color: #29404D;
 }
 .abiogas{
     justify-content: start;
@@ -805,7 +804,6 @@ footer{
     align-items: center;
 }
 .abiogas .logo img{
-    background-color: #8f8f8f;
     width: 100%;
     height: auto;
 }
@@ -824,6 +822,7 @@ footer{
     gap: 15px;
     display: flex;
     align-items: center;
+    
     justify-content: space-between;
 }
 
