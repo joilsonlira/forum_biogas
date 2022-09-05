@@ -183,6 +183,7 @@
         height: auto;
     }
     .gallery_box{
+        margin: .5rem;
         width: 150px;
         height: 150px;
     }
