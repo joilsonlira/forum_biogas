@@ -230,7 +230,10 @@
         justify-content: center;
         column-gap: 65px;
     }
-    .social_icon img{
+    .social_icon a{
+        margin: 0 20px;
+    }
+    .social_icon a img{
         width: 8vw;
     }
     .abiogas ,.faleconosco_container, .social_container{
@@ -258,8 +261,5 @@
     }
     section{
         max-width: 375px;
-    }
-    .social_icon{
-        justify-content: space-between;
     }
 }
