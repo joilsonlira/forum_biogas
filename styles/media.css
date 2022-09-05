@@ -225,11 +225,9 @@
     }
     .social_icon{
         display: flex;
-        justify-content: space-between;
-        gap: 65px;
-    }
-    .social_icon{
-        margin: 0 15px;
+        width: 100%;
+        justify-content: center;
+        column-gap: 65px;
     }
     .social_icon img{
         width: 8vw;
