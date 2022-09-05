@@ -227,7 +227,7 @@
     .social_icon{
         display: flex;
         width: 100%;
-        justify-content: center;
+        justify-content: space-around;
         column-gap: 65px;
     }
     .social_icon img{
