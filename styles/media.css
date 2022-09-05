@@ -62,7 +62,7 @@
 
     .menu_item{
         width: 90%;
-        margin: 20px 0;
+        margin: 10px 0;
     }
 
     .hamburger{
@@ -138,6 +138,9 @@
     .endereco{
         margin: 15px auto 0px auto;
         width: 100%;
+    }
+    .card_palestrante{
+        margin: 10px 0;
     }
 
     /*########### ABOUT ###############*/
@@ -243,4 +246,5 @@
     section{
         max-width: 375px;
     }
+
 }

@@ -794,6 +794,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px 0;
 }
 .abiogas{
     justify-content: start;
@@ -806,7 +807,7 @@ footer{
 }
 .faleconosco{
     padding: .5rem 1rem;
-    margin: 0;
+    margin: 0 10px;
 }
 .social_icon{
     gap: 15px;
