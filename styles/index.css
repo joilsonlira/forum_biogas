@@ -37,7 +37,7 @@ body{
     border: none;
     padding: 1rem;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 1em;
     font-weight: bold;
     border-radius: 50px;
     font-family: gotham-bold;
@@ -602,14 +602,23 @@ iframe{
     font-family: gotham-bold;
 }
 .porque_patrocinador button{
-    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 45%;
     margin-bottom: 20px;
     padding: .4rem 2rem;
 }
+.porque_patrocinador button img{
+    width: auto;
+    height: 90%;
+    margin-right: 10px;
+}
 .entrar_contato{
     display: flex;
-    justify-content: left;
-    column-gap: 20px;
+    justify-content: center;
+    column-gap: 10px;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -618,7 +627,7 @@ iframe{
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-    width: 50%;
+    width: 45%;
     border-radius: 50px;
     padding: .5rem;
     height: 40px;

@@ -39,6 +39,7 @@
     }
     .main_header{
         padding-top: 9px;
+        height: 64px;
     }
     .menu.active{
         right: 0;
