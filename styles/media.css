@@ -222,6 +222,7 @@
     } */
     .float_btn, .porque_patrocinador button{
         display: flex;
+        align-items: center;
         /* justify-content: left; */
         font-size: 2vw;
         width: 100%;
