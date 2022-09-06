@@ -39,7 +39,7 @@
     }
     .main_header{
         padding-top: 15px;
-        background-color: #29404D;
+        background: #29404D;
     }
     .menu.active{
         right: 0;
