@@ -18,7 +18,7 @@
     --color-MAIN: #CA2005;
     --color-LIGTH: #DBDBDB;
     --main-section-HEIGHT: 89vh;
-    --header-initial-HEIGHT: 12vh;
+    --header-initial-HEIGHT: 11vh;
     --standart-padding-margin: 30px;
 }
 /* ############################################ */
@@ -610,7 +610,6 @@ iframe{
     flex-wrap: wrap;
     width: 100%;
     margin-bottom: 20px;
-    background-color: #8f8f8f;
 }
 .entrar_contato h5{
     margin-bottom: 20px;
