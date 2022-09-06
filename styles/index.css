@@ -627,6 +627,7 @@ iframe{
 .float_btn img{
     width: auto;
     height: 100%;
+    margin-right: 10px;
 }
 .cota{
     display: flex;
