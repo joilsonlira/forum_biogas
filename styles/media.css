@@ -46,12 +46,11 @@
     }
     .logo{
         padding-top: 0;
-        /* padding-bottom: 0; */
-        /* background-color: aliceblue; */
+        height: 100%;
     }
-    /* .logo img{
-        background-color: aqua;
-    } */
+    .logo img{
+        height: 100%;
+    }
     .menu{
         position: fixed;
         flex-direction: column;
