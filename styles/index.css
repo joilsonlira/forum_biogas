@@ -102,6 +102,7 @@ body{
     z-index: 1;
     width: 100%;
     display: flex;
+    object-fit:contain;
     color: white;
     position: fixed;
     font-size: 13px;
@@ -115,7 +116,7 @@ body{
 }
 .logo{
     height: 100%;
-    padding: .5em;
+    padding: 1em;
 }
 .logo img{
     width: 100%;
