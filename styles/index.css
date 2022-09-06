@@ -601,42 +601,44 @@ iframe{
     font-weight: bold;
     font-family: gotham-bold;
 }
-.porque_patrocinador button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 45%;
-    margin-bottom: 20px;
-    padding: .4rem 2rem;
-}
-.porque_patrocinador button img{
-    width: auto;
-    height: 90%;
-    margin-right: 10px;
-}
 .entrar_contato{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     column-gap: 10px;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 20px;
+}
+.entrar_contato h5{
+    margin-bottom: 20px;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 50px;
+    background-color: var(--color-MAIN);
+}
+.contato_icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .float_btn{
     display: flex;
-    justify-content: center;
     align-items: center;
-    column-gap: 10px;
-    width: 45%;
-    border-radius: 50px;
-    padding: .5rem;
+    justify-content: center;
+    width: 40px;
     height: 40px;
-    background-color: #CA2005;
-    margin-bottom: 20px;
+    padding: .5rem;
+    margin: 10px;
 }
 .float_btn img{
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 .cota{
     display: flex;
