@@ -50,6 +50,7 @@
     }
     .logo img{
         height: 100%;
+        background-color: aqua;
     }
     .menu{
         position: fixed;
