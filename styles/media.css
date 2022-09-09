@@ -293,6 +293,9 @@
         margin: 0 auto;
         width: 90%;
     }
+    #modal_image .modal-content > button{
+        top: 35%;
+    }
 }
 @media screen and (max-width:375px){
     .main_header .logo{
