@@ -114,11 +114,11 @@ body{
     padding: 0px var(--standart-padding-margin);
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.6111) 0%, rgba(8, 35, 51, 0.5166) 100%), #29404D;
 }
-.logo{
+.main_header .logo{
     height: 100%;
     padding: 1em;
 }
-.logo img{
+.main_header .logo img{
     width: auto;
     height: 100%;
 }
