@@ -189,8 +189,14 @@ body{
 .information button{
     margin-bottom: var(--standart-padding-margin);
 }
-.information h2{
-    display: none;
+.tema{
+    display: block;
+    color: white;
+    margin: 1rem 0;
+}
+.tema strong{
+    font-weight: bolder;
+    font-size: 1.5em;
 }
 .information img{
     width: 40%;
@@ -393,7 +399,7 @@ iframe{
     text-transform: uppercase;
 }
 .programacao_start p, .programacao_start h2{
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
 }
 .programacao_start p, .programacao_start h2, .programacao_start button{
     width: 60vw;
