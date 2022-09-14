@@ -193,10 +193,16 @@ body{
     display: block;
     color: white;
     margin: 1rem 0;
+    font-size: 1.1em;
 }
 .tema strong{
     font-weight: bolder;
     font-size: 1.5em;
+}
+.endereco_description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .information img{
     width: 40%;
@@ -219,7 +225,7 @@ body{
     font-size: .8em;
 }
 .destaque{
-    font-size: 6.5vw;
+    font-size: 6.4vw;
     font-family: 'gotham-bold';
 }
 .data_container{
