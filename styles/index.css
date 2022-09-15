@@ -188,12 +188,10 @@ body{
     color: white;
     text-align: center;
     margin: 1rem 0;
-    font-size: 2vw;
-}
-.information .tema strong{
+    font-size: 27px;
     font-weight: bolder;
-    font-size: 1.5em;
 }
+
 .start_endereco{
     display: flex;
     align-items: center;
