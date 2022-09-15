@@ -122,6 +122,12 @@
         margin-bottom: 15px;
         font-size: 5vw;
     }
+    .tema{
+        display: block;
+        font-size: .8em;
+        font-weight: bolder;
+        text-align: center;
+    }
     .destaque{
         font-size: 10vw;
     }
@@ -310,6 +316,13 @@
     }
     .endereco_icon img{
         width: 10vw;
+    }
+    .tema{
+        display: block;
+        font-size: .8em;
+        color: white;
+        font-weight: bolder;
+        text-align: center;
     }
     section{
         max-width: 375px;
