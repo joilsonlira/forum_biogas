@@ -186,8 +186,9 @@ body{
 .information .tema{
     display: block;
     color: white;
+    text-align: center;
     margin: 1rem 0;
-    font-size: 1.7em;
+    font-size: 2vw;
 }
 .information .tema strong{
     font-weight: bolder;
