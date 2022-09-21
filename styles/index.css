@@ -650,6 +650,7 @@ iframe{
 .cota{
     display: flex;
     flex-direction: column;
+    
 }
 
 .container_modal_patrocinador{
@@ -742,6 +743,7 @@ iframe{
 
 .cota_container{
     height: auto;
+    
 }
 .patrocinadores_container{
     height: auto;
@@ -765,7 +767,7 @@ iframe{
     transition: all linear 500ms;
     -moz-transition: all linear 500ms;
     -webkit-transition: all linear 500ms;
-    background: rgba(255, 255, 255, .1);
+    /* background: rgba(255, 255, 255, .1); */
 }
 .patrocinador_logo a{
     width: auto;
