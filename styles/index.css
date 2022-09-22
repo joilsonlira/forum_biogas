@@ -87,6 +87,7 @@ body{
     grid-template-areas: 
     'HEADER'
     'START'
+    'PRE_INSCRICAO'
     'ABOUT'
     'EDICAO'
     'PROGRAMACAO'
@@ -175,6 +176,9 @@ body{
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.6111) 0%, rgba(8, 35, 51, 0.5166) 100%), #29404D;
 }
 .logo_start{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
     width: 25%;
     height: auto;
     margin: 0 auto;
@@ -183,6 +187,12 @@ body{
     width: 100%;
     height: 100%;
 }
+/* #pre{
+    background-color: #CA2005;
+    text-align: center;
+    height: 40px;
+    width: auto;
+} */
 .information .tema{
     display: block;
     color: white;
@@ -297,6 +307,41 @@ body{
     flex-direction: column;
     padding: 0 var(--standart-padding-margin);
 }
+.pre-inscricao{
+    grid-area: PRE_INSCRICAO;
+    width: 100%;
+    height: auto;
+}
+.content_pre{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    height: 100px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.form-pre{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.form-pre input{
+    width: 80%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    text-transform: uppercase;
+    padding: 0 1rem;
+}
+.form-pre button{
+    width: 80%;
+}
+
 .about_container{
     display: flex;
     align-items: center;

@@ -40,6 +40,7 @@
         <section class="start">
             <div class="logo_start">
                 <img src="./components/images/Ativo 132logo 1.png" alt="Logo Fórum ABiogás">
+                <a href="#pre" class="btn" style="text-align: center;">QUERO PARTICIPAR!</a>
             </div>
             <section class="information">
                 <h1>O MAIOR evento de biogás da <br><b class="destaque">América Latina</b></h1>
@@ -80,6 +81,22 @@
                     <button class="btn_inscrevase btn">palestra<br><i>inscreva-se</i></button>
                 </div>
             </section>
+        </section>
+        <section class="pre-inscricao" id="pre">
+            <header class="section_header">
+                <img src="./components/images/icon_header.png" alt="">
+                <h2>PRÉ-INSCRIÇÕES</h2>
+            </header>
+            <div class="content_pre">
+                <p>Envie seu contato e receba o link assim que Fórum abrir inscrições!</p>
+            </div>
+            <form class="form-pre" action="scripts/php/pre_inscricao.php" method="post">
+                <input type="text" name="txt_nome_pre" id="txt_nome_pre" placeholder="NOME" required>
+                <input type="text" name="txt_empresa_pre" id="txt_empresa_pre" placeholder="Empresa/Instituição
+                " required>
+                <input type="email" name="txt_email_pre" id="txt_email_pre" placeholder="E-MAIL" required>
+                <button type="submit" class="btn">enviar</button>
+            </form>
         </section>
         <section class="about" id="about">
             <header class="section_header">
