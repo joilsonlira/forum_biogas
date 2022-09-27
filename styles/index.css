@@ -193,7 +193,7 @@ body{
     height: 100%;
 }
 .logo_start .btn{
-    /* margin-top: 25px; */
+    /* margin-bottom: 25px; */
     padding: .7rem 0;
 }
 /* #pre{
@@ -202,7 +202,8 @@ body{
     height: 40px;
     width: auto;
 } */
-.information .tema{
+
+.tema{
     display: block;
     color: white;
     text-align: center;
@@ -320,7 +321,7 @@ body{
 .pre-inscricao{
     grid-area: PRE_INSCRICAO;
     margin: 0 auto;
-    width: 90%;
+    /* width: 90%; */
     height: auto;
 }
 .content_pre{
@@ -328,10 +329,10 @@ body{
     align-items:center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 10px;
     row-gap: 20px;
     height: 100px;
     padding: 1rem;
-    margin-bottom: 10px;
 }
 .content_pre p{
     color: white;

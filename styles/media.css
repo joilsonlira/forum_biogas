@@ -119,8 +119,8 @@
         width: 50%;
         margin-bottom: var(--standart-padding-margin);
     }
-
     .information{
+        margin-top: 20px;
         padding: 0 5%;
     }
     .information, .endereco_description{
