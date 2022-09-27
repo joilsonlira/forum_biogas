@@ -98,9 +98,9 @@
     .inscrevase_container{
         width: 100%;
         justify-content: center;
-        row-gap: 30px;
+        /* row-gap: 30px; */
         flex-wrap: wrap;
-        margin-top: 30px;
+        margin-bottom: 30px;
     }
     .inscrevase_container button{
         width: 100%;
@@ -115,6 +115,7 @@
         width: 50%;
         margin-bottom: var(--standart-padding-margin);
     }
+
     .information{
         padding: 0 5%;
     }
