@@ -213,6 +213,7 @@
     }
     .hotel{
         width: 100%;
+        margin: .5rem 0;
     }
     /*################ PROGRAMAÇÃO #############*/
     .programacao_start p, .programacao_start h2{
