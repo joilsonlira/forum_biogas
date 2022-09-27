@@ -8,16 +8,20 @@
         margin-bottom: 0px;
     }
     .logo_start{
-        width: 31.5%;
+        width: 29%;
     }
     .start .information h1{
-        font-size: 51px;
+        font-size: 63px;
     }
     .start .information .tema{
         font-size: 30px;
     }
     .start .information .endereco{
         width: 100%;
+    }
+    .logo_start .btn{
+        /* margin-top: 25px; */
+        padding: .7rem 0;
     }
 
     .endereco_icon img{
