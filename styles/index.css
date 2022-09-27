@@ -70,16 +70,20 @@ body{
     font-weight: 400;
     font-size: 20px;
     padding: .5rem;
+    width: 100%;
 }
 .inscrevase_container{
     display: flex;
     width: 100%;
+    height: 100%;
+    padding-top: 1.6rem;
+    align-items: center;
     justify-content: center;
     column-gap: 30px;
 }
 .btn_inscrevase{
-    padding: .5rem;
-    width: 50%;
+    padding: 1rem;
+    width: 100%;
 }
 .main_content{
     display: grid;
@@ -180,6 +184,7 @@ body{
     flex-direction: column;
     row-gap: 40px;
     width: 25%;
+    height: 100%;
     height: auto;
     margin: 0 auto;
 }
@@ -216,6 +221,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     color: white;
     width: 53%;
 }
@@ -319,17 +325,21 @@ body{
     flex-direction: column;
     row-gap: 20px;
     height: 100px;
-    margin-bottom: 20px;
-    color: white;
+    padding: 1rem;
+    margin-bottom: 10px;
 }
-
+.content_pre p{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+}
 .form-pre{
     display: flex;
     align-items: center;
     flex-direction: column;
     row-gap: 20px;
+    margin-bottom: 50px;
 }
-
 .form-pre input{
     width: 80%;
     height: 40px;
@@ -444,8 +454,16 @@ iframe{
     color: var(--color-MAIN);
     text-transform: uppercase;
 }
-.programacao_start p, .programacao_start h2{
-    /* font-size: 1.5em; */
+.programacao_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+    padding: .5rem;
+    margin-top: 1rem;
+    color: var(--color-MAIN);
+    border-bottom: 1px solid white;
 }
 .programacao_start p, .programacao_start h2, .programacao_start button{
     width: 60vw;
@@ -470,6 +488,7 @@ iframe{
 }
 .programacao_content{
     width: 100%;
+    margin-bottom: 50px;
 }
 .painel{
     width: 100%;
@@ -797,6 +816,7 @@ iframe{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    width: 900px;
 }
 
 .patrocinador_logo{

@@ -9,32 +9,33 @@ $email = trim($_POST['txt_email_pre']);
 $empresa = trim($_POST['txt_empresa_pre']);
 
 
-$subject = "Quero ser um patrocinador";
+$subject = "Pré-inscrição";
 
 
 //pega os dados que foi digitado no ID message.
 $myEmail = "secretaria@abiogas.org.br";//é necessário informar um e-mail do próprio domínio
-$email_to = 'cadastro@anexoeventos.combr';
+$email_to = 'cadastro@anexoeventos.com.br';
 $headers = "From: $myEmail\r\n";
 $headers .= "Reply-To: $myEmail\r\n";
 
 /*abaixo contém os dados que serão enviados para o email
 cadastrado para receber o formulário*/
 
-$corpo = "Quero ser um patrocinador\n";
+$corpo = "Pré-inscrição\n";
 $corpo .= "Nome: " . $name . "\n";
 $corpo .= "Email: " . $email . "\n";
 $corpo .= "Empresa: " . $empresa . "\n";
 
-$status = validar_email($nome, $subject, $message,$corpo, $headers, $email_to);
+$status = validar_email($nome, $subject, $email, $corpo, $headers, $email_to);
 
-function validar_email($nome, $whatsapp, $message,$corpo, $headers, $email_to){
-    if($nome === "" or $message === ""){
-        gravar($corpo."data/hora: ".$agora = date('d/m/Y H:i').";\n");
+function validar_email($nome, $subject, $email, $corpo, $headers, $email_to){
+    $agora = date('d/m/Y H:i');
+    if($nome === "" or $email === ""){
+        gravar($corpo."data/hora: ".$agora.";\n");
         $status = false;
     }else{
-        gravar($corpo."data/hora: ".$agora = date('d/m/Y H:i').";\n");
-        $status = mail($email_to, $corpo, $headers);
+        gravar($corpo."data/hora: ".$agora.";\n");
+        $status = mail($email_to, $subject, $corpo, $headers);
         //enviando o email.
     }
     return $status;
@@ -55,7 +56,7 @@ if ($status== 1) {
 //Criamos uma função que recebe um texto como parâmetro.
 function gravar($texto){
 	//Variável arquivo armazena o nome e extensão do arquivo.
-	$arquivo = "patrocinadores_arquivo.txt";
+	$arquivo = "preInscricao_arquivo.txt";
 	
 	//Variável $fp armazena a conexão com o arquivo e o tipo de ação.
 	$fp = fopen($arquivo, "a+");

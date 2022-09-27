@@ -76,9 +76,8 @@
                 </section>
                 <button class="endereco btn"><a href="https://www.google.com/maps/place/APAS+-+Associa%C3%A7%C3%A3o+Paulista+de+Supermercados/@-23.533824,-46.713912,10z/data=!4m5!3m4!1s0x0:0x8212404881c7839!8m2!3d-23.5338238!4d-46.7139116?hl=pt-BR" target="_blank">R. Pio XI, 1200 - Alto da Lapa, São Paulo - SP, 05060-001</a></button>
                 
-                <div class="inscrevase_container" style="display: none;">
-                    <button class="btn_inscrevase btn">feira<br><i>inscreva-se</i></button>
-                    <button class="btn_inscrevase btn">palestra<br><i>inscreva-se</i></button>
+                <div class="inscrevase_container">
+                    <button class="btn_inscrevase btn" onclick="se_inscrever()">inscreva-se</button>
                 </div>
             </section>
         </section>
@@ -199,24 +198,35 @@
                     </a></div>
                 </div>
             </section>
-            <section class="programacao" style="display: none;">
+            <section class="programacao">
                 <section class="programacao_content">
+                    <header class="programacao_header" style="width: 100%; padding: 1rem;">
+                        <h2>30/11</h2>
+                    </header>
                     <section class="painel">
                         <header class="painel_header">
-                            <h2 class="horario">9h às 10h:</h2>
+                            <h2 class="horario">9h às 10h</h2>
                             <h3 class="title_painel">
-                                Credenciamento + Welcome coffee
+                                Credenciamento
                             </h3>
                         </header>
                     </section>
                     <section class="painel">
-                        <header class="painel_header" style="border-bottom: none;">
-                            <h2 class="horario">9h às 10h:</h2>
+                        <header class="painel_header">
+                            <h2 class="horario">10:30 às 11h</h2>
                             <h3 class="title_painel">
-                                Credenciamento + Welcome coffee
+                                Abertura ABiogás
                             </h3>
                         </header>
-                        <section class="content">
+                    </section>
+                    <section class="painel">
+                        <header class="painel_header">
+                            <h2 class="horario">11h às 12:30</h2>
+                            <h3 class="title_painel">
+                                Painel 1: Biogás como solução para a segurança energética
+                            </h3>
+                        </header>
+                        <section class="content" style="display: none;">
                             <article class="card_palestrante">
                                 <section class="foto_palestrante">
                                     <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
@@ -272,11 +282,348 @@
                                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
                                 </section>
                             </article>
-                            
+                        </section>
+                        <section class="painel">
+                            <header class="painel_header">
+                                <h2 class="horario">12:30 às 14h</h2>
+                                <h3 class="title_painel">
+                                    Almoço
+                                </h3>
+                            </header>
+                        </section>
+                        <section class="painel">
+                            <header class="painel_header">
+                                <h2 class="horario">14h às 15:30</h2>
+                                <h3 class="title_painel">
+                                    Painel 2: Mercado livre de gás - oportunidades para o biogás
+                                </h3>
+                            </header>
+                            <section class="content" style="display: none;">
+                                <article class="card_palestrante">
+                                    <section class="foto_palestrante">
+                                        <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                    </section>
+                                    <section class="conten_palestrante">
+                                        <h2 class="nome">consectetur adipiscing</h2>
+                                        <h3 class="cargo">lorem ipsum dolor</h3>
+                                        <h3 class="empresa">lorem ipsum dolor</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                    </section>
+                                </article>
+                                <article class="card_palestrante">
+                                    <section class="foto_palestrante">
+                                        <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                    </section>
+                                    <section class="conten_palestrante">
+                                        <h2 class="nome">consectetur adipiscing</h2>
+                                        <h3 class="cargo">lorem ipsum dolor</h3>
+                                        <h3 class="empresa">lorem ipsum dolor</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                    </section>
+                                </article>
+                                <article class="card_palestrante">
+                                    <section class="foto_palestrante">
+                                        <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                    </section>
+                                    <section class="conten_palestrante">
+                                        <h2 class="nome">consectetur adipiscing</h2>
+                                        <h3 class="cargo">lorem ipsum dolor</h3>
+                                        <h3 class="empresa">lorem ipsum dolor</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                    </section>
+                                </article>
+                                <article class="card_palestrante">
+                                    <section class="foto_palestrante">
+                                        <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                    </section>
+                                    <section class="conten_palestrante">
+                                        <h2 class="nome">consectetur adipiscing</h2>
+                                        <h3 class="cargo">lorem ipsum dolor</h3>
+                                        <h3 class="empresa">lorem ipsum dolor</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                    </section>
+                                </article>
+                                <article class="card_palestrante">
+                                    <section class="foto_palestrante">
+                                        <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                    </section>
+                                    <section class="conten_palestrante">
+                                        <h2 class="nome">consectetur adipiscing</h2>
+                                        <h3 class="cargo">lorem ipsum dolor</h3>
+                                        <h3 class="empresa">lorem ipsum dolor</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                    </section>
+                                </article>
+                            </section>
+                        </section>
+                        <section class="painel">
+                            <header class="painel_header">
+                                <h2 class="horario">15:30 às 16:20</h2>
+                                <h3 class="title_painel">
+                                    Coffee break & networking
+                                </h3>
+                            </header>
+                        </section>
+                        <section class="painel">
+                            <header class="painel_header">
+                                <h2 class="horario">16:20 às 17h</h2>
+                                <h3 class="title_painel">
+                                    Espaço patrocinadores 
+                                </h3>
+                            </header>
+                        </section>
+                        <section class="painel">
+                            <header class="painel_header">
+                                <h2 class="horario">17h às 18h</h2>
+                                <h3 class="title_painel">
+                                    Painel 3: Novas fronteiras tecnológicas do biogás - hidrogênio, CCS, amônia e metanol
+                                </h3>
+                            </header>
+                            <section class="content" style="display: none;">
+                                <article class="card_palestrante">
+                                    <section class="foto_palestrante">
+                                        <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                    </section>
+                                    <section class="conten_palestrante">
+                                        <h2 class="nome">consectetur adipiscing</h2>
+                                        <h3 class="cargo">lorem ipsum dolor</h3>
+                                        <h3 class="empresa">lorem ipsum dolor</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                    </section>
+                                </article>
+                                <article class="card_palestrante">
+                                    <section class="foto_palestrante">
+                                        <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                    </section>
+                                    <section class="conten_palestrante">
+                                        <h2 class="nome">consectetur adipiscing</h2>
+                                        <h3 class="cargo">lorem ipsum dolor</h3>
+                                        <h3 class="empresa">lorem ipsum dolor</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                    </section>
+                                </article>
+                                <article class="card_palestrante">
+                                    <section class="foto_palestrante">
+                                        <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                    </section>
+                                    <section class="conten_palestrante">
+                                        <h2 class="nome">consectetur adipiscing</h2>
+                                        <h3 class="cargo">lorem ipsum dolor</h3>
+                                        <h3 class="empresa">lorem ipsum dolor</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                    </section>
+                                </article>
+                                <article class="card_palestrante">
+                                    <section class="foto_palestrante">
+                                        <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                    </section>
+                                    <section class="conten_palestrante">
+                                        <h2 class="nome">consectetur adipiscing</h2>
+                                        <h3 class="cargo">lorem ipsum dolor</h3>
+                                        <h3 class="empresa">lorem ipsum dolor</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                    </section>
+                                </article>
+                                <article class="card_palestrante">
+                                    <section class="foto_palestrante">
+                                        <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                    </section>
+                                    <section class="conten_palestrante">
+                                        <h2 class="nome">consectetur adipiscing</h2>
+                                        <h3 class="cargo">lorem ipsum dolor</h3>
+                                        <h3 class="empresa">lorem ipsum dolor</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                    </section>
+                                </article>
+                            </section>
                         </section>
                     </section>
                 </section>
+                <section class="programacao_content">
+                    <header class="programacao_header">
+                        <h2>01/12</h2>
+                    </header>
+                    <section class="painel">
+                        <header class="painel_header">
+                            <h2 class="horario">9h às 10h</h2>
+                            <h3 class="title_painel">
+                                Credenciamento
+                            </h3>
+                        </header>
+                    </section>
+                    <section class="painel">
+                        <header class="painel_header">
+                            <h2 class="horario">10:30 às 12:30</h2>
+                            <h3 class="title_painel">
+                                Workshop 1: Mercado de carbono
+                            </h3>
+                        </header>
+                    </section>
+                    <section class="painel">
+                        <header class="painel_header">
+                            <h2 class="horario">12:30 às 14h</h2>
+                            <h3 class="title_painel">
+                                Almoço
+                            </h3>
+                        </header>
+                    </section>
+                    <section class="painel">
+                        <header class="painel_header">
+                            <h2 class="horario">14h às 15h</h2>
+                            <h3 class="title_painel">
+                                Painel 4: O papel do biogás na gestão sustentável de resíduos
+                            </h3>
+                        </header>
+                        <section class="content" style="display: none;">
+                            <article class="card_palestrante">
+                                <section class="foto_palestrante">
+                                    <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                </section>
+                                <section class="conten_palestrante">
+                                    <h2 class="nome">consectetur adipiscing</h2>
+                                    <h3 class="cargo">lorem ipsum dolor</h3>
+                                    <h3 class="empresa">lorem ipsum dolor</h3>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                </section>
+                            </article>
+                            <article class="card_palestrante">
+                                <section class="foto_palestrante">
+                                    <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                </section>
+                                <section class="conten_palestrante">
+                                    <h2 class="nome">consectetur adipiscing</h2>
+                                    <h3 class="cargo">lorem ipsum dolor</h3>
+                                    <h3 class="empresa">lorem ipsum dolor</h3>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                </section>
+                            </article>
+                            <article class="card_palestrante">
+                                <section class="foto_palestrante">
+                                    <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                </section>
+                                <section class="conten_palestrante">
+                                    <h2 class="nome">consectetur adipiscing</h2>
+                                    <h3 class="cargo">lorem ipsum dolor</h3>
+                                    <h3 class="empresa">lorem ipsum dolor</h3>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                </section>
+                            </article>
+                            <article class="card_palestrante">
+                                <section class="foto_palestrante">
+                                    <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                </section>
+                                <section class="conten_palestrante">
+                                    <h2 class="nome">consectetur adipiscing</h2>
+                                    <h3 class="cargo">lorem ipsum dolor</h3>
+                                    <h3 class="empresa">lorem ipsum dolor</h3>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                </section>
+                            </article>
+                            <article class="card_palestrante">
+                                <section class="foto_palestrante">
+                                    <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                </section>
+                                <section class="conten_palestrante">
+                                    <h2 class="nome">consectetur adipiscing</h2>
+                                    <h3 class="cargo">lorem ipsum dolor</h3>
+                                    <h3 class="empresa">lorem ipsum dolor</h3>
+                                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                </section>
+                            </article>
+                        </section>
+                    </section>
+                    <section class="painel">
+                        <header class="painel_header">
+                            <h2 class="horario">15h às 15:40</h2>
+                            <h3 class="title_painel">
+                                Espaço patrocinadores 
+                            </h3>
+                        </header>
+                    </section>
+                    <section class="painel">
+                        <header class="painel_header">
+                            <h2 class="horario">15:40 às 16:30</h2>
+                            <h3 class="title_painel">
+                                Coffee break & networking
+                            </h3>
+                        </header>
+                    </section>
+                    <section class="painel">
+                        <header class="painel_header">
+                            <h2 class="horario">16:30 às 17:30</h2>
+                            <h3 class="title_painel">
+                                Painel 5: O futuro descarbonizado começa agora com o biogás 
+                            </h3>
+                        </header>
+                        <section class="content" style="display: none;">
+                                <article class="card_palestrante">
+                                    <section class="foto_palestrante">
+                                        <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                    </section>
+                                    <section class="conten_palestrante">
+                                        <h2 class="nome">consectetur adipiscing</h2>
+                                        <h3 class="cargo">lorem ipsum dolor</h3>
+                                        <h3 class="empresa">lorem ipsum dolor</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                    </section>
+                                </article>
+                                <article class="card_palestrante">
+                                    <section class="foto_palestrante">
+                                        <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                    </section>
+                                    <section class="conten_palestrante">
+                                        <h2 class="nome">consectetur adipiscing</h2>
+                                        <h3 class="cargo">lorem ipsum dolor</h3>
+                                        <h3 class="empresa">lorem ipsum dolor</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                    </section>
+                                </article>
+                                <article class="card_palestrante">
+                                    <section class="foto_palestrante">
+                                        <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                    </section>
+                                    <section class="conten_palestrante">
+                                        <h2 class="nome">consectetur adipiscing</h2>
+                                        <h3 class="cargo">lorem ipsum dolor</h3>
+                                        <h3 class="empresa">lorem ipsum dolor</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                    </section>
+                                </article>
+                                <article class="card_palestrante">
+                                    <section class="foto_palestrante">
+                                        <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                    </section>
+                                    <section class="conten_palestrante">
+                                        <h2 class="nome">consectetur adipiscing</h2>
+                                        <h3 class="cargo">lorem ipsum dolor</h3>
+                                        <h3 class="empresa">lorem ipsum dolor</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                    </section>
+                                </article>
+                                <article class="card_palestrante">
+                                    <section class="foto_palestrante">
+                                        <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
+                                    </section>
+                                    <section class="conten_palestrante">
+                                        <h2 class="nome">consectetur adipiscing</h2>
+                                        <h3 class="cargo">lorem ipsum dolor</h3>
+                                        <h3 class="empresa">lorem ipsum dolor</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
+                                    </section>
+                                </article>
+                        </section>
+                    </section>
+                    <section class="painel">
+                        <header class="painel_header">
+                            <h2 class="horario">17:30 às 18h</h2>
+                            <h3 class="title_painel">
+                                Encerramento
+                            </h3>
+                        </header>
+                    </section>
+                </section>
             </section>
+        </section>
         </section>
         <section class="patrocinador" id="patrocinador">
             <header class="section_header">
@@ -352,7 +699,7 @@
                                     <img src="./components/images/patrocinadores_ssets/AirProducts-logo-pms347-PNG.png" alt="Patrocinador diamante, Air Products">
                                 </a>
                             </div>
-                            <div class="patrocinador_logo"> <!--  onclick="open_modal('modal_rizen')"-->
+                            <div class="patrocinador_logo" style="display: none;"> <!--  onclick="open_modal('modal_rizen')"-->
                                 <a href="https://www.yarabrasil.com.br/contate-nos/" target="_blank" rel="noopener noreferrer">
                                     <img src="./components/images/patrocinadores_ssets/yara-logo.png" alt="Patrocinador diamante, Air Products" style="width: 100px; height: 100px;">
                                 </a>

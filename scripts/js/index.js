@@ -49,7 +49,9 @@ for(let i = 0; i < images.length; i++){
         modal.style.display = 'flex';
     });
 }
-
+function se_inscrever(){
+    window.location.href = 'https://abiogas.org.br/sobre-nos/'
+}
 // setInterval(function(){
 //     location.reload();
 // },50000)
