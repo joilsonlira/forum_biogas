@@ -8,17 +8,18 @@
         margin-bottom: 0px;
     }
     .logo_start{
-        width: 30%;
+        width: 31.5%;
     }
-    .information h1{
-        font-size: 64px;
+    .start .information h1{
+        font-size: 51px;
     }
     .start .information .tema{
-        font-size: 40px;
+        font-size: 30px;
     }
     .start .information .endereco{
         width: 100%;
     }
+
     .endereco_icon img{
         width: 2vw;
     }
@@ -161,6 +162,10 @@
     }
     .card_palestrante{
         margin: 10px 0;
+    }
+    .programacao_start .endereco_description{
+        width: auto;
+        font-size: 18px;
     }
 
 
