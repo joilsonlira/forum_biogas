@@ -193,7 +193,7 @@ body{
     height: 100%;
 }
 .logo_start .btn{
-    margin-top: 25px;
+    /* margin-top: 25px; */
     padding: .7rem 0;
 }
 /* #pre{
@@ -319,7 +319,8 @@ body{
 }
 .pre-inscricao{
     grid-area: PRE_INSCRICAO;
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
     height: auto;
 }
 .content_pre{
@@ -447,7 +448,7 @@ iframe{
 
 .programacao_start{
     display: flex;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     line-height: 28px;
     align-items: center;
     flex-direction: column;
