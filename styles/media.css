@@ -10,6 +10,9 @@
     .logo_start{
         width: 27%;
     }
+    .logo_start .btn{
+        margin-top: 10px;
+    }
     .start .information h1{
         font-size: 61px;
     }
