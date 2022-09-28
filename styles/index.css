@@ -859,7 +859,7 @@ iframe{
     align-items: center;
     justify-content: center;
 }
-.patrocinador_logo:hover{
+.patrocinador_logo:hover, .apoiador:hover{
     background: white;
 }
 .patrocinador_logo img{
@@ -894,7 +894,7 @@ iframe{
     height: 100px;
     padding: .5rem;
     margin: .5rem;
-    background: rgba(255, 255, 255,1);
+    /* background: rgba(255, 255, 255,1); */
 }
 .apoiador img{
     width: 100%;
