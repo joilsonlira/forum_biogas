@@ -894,6 +894,7 @@ iframe{
     height: 100px;
     padding: .5rem;
     margin: .5rem;
+    transition: 500ms linear all;
     /* background: rgba(255, 255, 255,1); */
 }
 .apoiador img{
