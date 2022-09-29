@@ -288,6 +288,10 @@
     .patrocinadores_container{
         width: 100%;
     }
+    .apoiadores_box{
+        width: 100%;
+        padding: .5rem;
+    }
     footer{
         flex-direction: column;
         gap:var(--standart-padding-margin);
