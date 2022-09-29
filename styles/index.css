@@ -879,7 +879,7 @@ iframe{
 }
 .apoiadores_box{
     gap: 10px 10px;
-    width: 70%;
+    width: 50%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
