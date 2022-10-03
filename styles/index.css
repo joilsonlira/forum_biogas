@@ -87,7 +87,7 @@ body{
 }
 .main_content{
     display: grid;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas: 
     'HEADER'
     'START'
@@ -101,7 +101,8 @@ body{
     width: 100%;
     height: auto;
     font-family: 'gotham';
-    background-color: var(--color-BG);
+    /* background-color: var(--color-BG); */
+    background: linear-gradient(0deg, rgba(255, 255, 255, .9) 20%, rgba(8, 35, 51, 0.5166) 30%), #29404D;
 }
 .main_header{
     z-index: 1;
@@ -234,7 +235,7 @@ body{
     color: white;
     font-size: 3.2vw;
     text-align: left;
-    text-align: justify;
+    text-align: center;
     font-family: gotham-bold;
 }
 .information button i{
@@ -666,7 +667,7 @@ iframe{
     flex-direction: column;
     grid-area: PATROCINADOR;
     justify-content: center;
-    padding: 0 var(--standart-padding-margin);
+    /* padding: 0 var(--standart-padding-margin); */
 }
 .patrocinador .section_header{
     border: none;
@@ -809,7 +810,7 @@ iframe{
     height: auto;
 }
 /*############## VARIAÇÃO DE TAMANHOS PARA OS LOGOS DE ACORDO COM A COTA DE PATROCINIO ####### */
-.cota .cota_container:nth-child(1) .patrocinadores_container .patrocinador_logo{
+/* .cota .cota_container:nth-child(1) .patrocinadores_container .patrocinador_logo{
     width: 225px;
     height: 225px;
 }
@@ -820,21 +821,48 @@ iframe{
 .cota .cota_container:nth-child(3) .patrocinadores_container .patrocinador_logo{
     width: 175px;
     height: 175px;
-}
+} */
 /*#############################################################################################*/
 
+/* ######################## header_cota_and_apoiadores */
+.alternativo_header{
+    width: 100%;
+    justify-content: left;
+}
+.alternativo_header img{
+    width: 50px;
+}
+.alternativo_header::after{
+    content: "";
+    width: 85%;
+    height: 2px;
+    background-color: #CA2005;
+}
+.alternativo_header h2{
+    width: 15%;
+    text-align: justify;
+    font-size: .8em;
+    font-weight: bolder;
+    margin-right: 10px;
+    /* background-color: #DBDBDB; */
+}
+/* ################################################### */
+.cota{
+    width: 80%;
+}
 .cota_container{
     height: auto;
     
 }
+
 .patrocinadores_container{
     height: auto;
     display: flex;
     /* gap: 20px 20px; */
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    width: 900px;
+    /* justify-content: center; */
+    width: 100%;
 }
 
 .patrocinador_logo{
@@ -859,9 +887,9 @@ iframe{
     align-items: center;
     justify-content: center;
 }
-.patrocinador_logo:hover, .apoiador:hover{
+/* .patrocinador_logo:hover, .apoiador:hover{
     background: white;
-}
+} */
 .patrocinador_logo img{
     width: 100%;
     height: auto;
@@ -879,12 +907,13 @@ iframe{
 }
 .apoiadores_box{
     gap: 10px 10px;
-    width: 50%;
+    width: 80%;
     height: auto;
     display: flex;
+    margin: 0 auto;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 .apoiador{
     display: flex;
@@ -903,15 +932,26 @@ iframe{
 }
 
 /*############### FOOTER #####################*/
-footer{
-    width: 100%;
-    height: auto;
+/* .main_content footer{
+    display: block;
+} */
+.footer_content{
     display: flex;
+    width: 100%;
+    align-items: center;
+    /* background-color: #29404D; */
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.main_content footer{
+    width: 80%;
+    height: auto;
+    display: block;
     grid-area: FOOTER;
     align-items: center;
     justify-content: space-between;
-    padding: var(--standart-padding-margin);
-    margin-top: var(--standart-padding-margin);
+    /* padding: var(--standart-padding-margin); */
+    margin: var(--standart-padding-margin) auto;
 }
 .abiogas ,.faleconosco_container, .social_container{
     width: 30%;
@@ -929,7 +969,7 @@ footer{
     align-items: center;
 }
 .abiogas .logo img{
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 .faleconosco_container{
@@ -937,6 +977,22 @@ footer{
 }
 .social_container{
     justify-content: end;
+}
+.logo_anexo{
+    width: 80%;
+    /* background-color: #29404D; */
+}
+.logo_anexo a{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: auto;
+    /* background-color: #8f8f8f; */
+}
+.logo_anexo img{
+    width: 70%;
+    height: auto;
 }
 .faleconosco{
     height: auto;
