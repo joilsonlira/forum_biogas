@@ -739,7 +739,7 @@
                             <img src="./components/images/icon_header.png" alt="">
                             <h2 style="width: 17%;">patrocinio DIAMANTE</h2>
                         </header>
-                        <div class="patrocinadores_container">
+                        <div class="patrocinadores_container" style="justify-content: space-between;">
                             <div class="patrocinador_logo">
                                 <a href="https://www.scania.com/br/pt/home/contact-us.html" target="_blank" rel="noopener noreferrer">
                                     <img src="./components/images/patrocinadores_ssets/logo_scania_v.png" alt="Patrocinador diamante, Scania">
@@ -752,7 +752,7 @@
                             </div>
                             <div class="patrocinador_logo"> <!--  onclick="open_modal('modal_rizen')"-->
                                 <a href="https://www.ivecogroup.com/media/contacts" target="_blank" rel="noopener noreferrer">
-                                    <img src="./components/images/patrocinadores_ssets/iveco_group.png" alt="Patrocinador diamante, Iveco Group" style="width: 150px;">
+                                    <img src="./components/images/patrocinadores_ssets/iveco_group.png" alt="Patrocinador diamante, Iveco Group">
                                 </a>
                             </div>
                             <div class="patrocinador_logo"> <!--  onclick="open_modal('modal_rizen')"-->
@@ -803,7 +803,7 @@
                         <div class="patrocinadores_container">
                             <div class="patrocinador_logo">
                                 <a href="https://www.geobiogas.tech/contato/" target="_blank" rel="noopener noreferrer">
-                                    <img src="./components/images/patrocinadores_ssets/logo-color-completo(2).png" alt="Patrocinador prata, geobiogas">
+                                    <img src="./components/images/patrocinadores_ssets/logo-color-completo(2).png" alt="Patrocinador prata, geobiogas" style="width: 90px;">
                                 </a>
                             </div>
                             <div class="patrocinador_logo">
@@ -831,7 +831,7 @@
                         <div class="patrocinadores_container">
                             <div class="patrocinador_logo">
                                 <a href="https://www.asja.energy/pt-br/contato/" target="_blank" rel="noopener noreferrer">
-                                    <img src="./components/images/patrocinadores_ssets/ASJA.png" alt="Patrocinador bronze, ASJA">
+                                    <img src="./components/images/patrocinadores_ssets/ASJA.png" alt="Patrocinador bronze, ASJA" style="width: 90px;">
                                 </a>
                             </div>
                             <div class="patrocinador_logo">
@@ -862,7 +862,7 @@
                 </div>
                 <div class="apoiador">
                     <a href="https://www.abegas.org.br/" target="_blank" rel="noopener noreferrer">
-                        <img src="./components/images/apoiadores_assets/abegas.png" alt="Apoiador, Abegás" style="height: 60px;">
+                        <img src="./components/images/apoiadores_assets/abegas.png" alt="Apoiador, Abegás" style="height: 55px; width: auto;">
                     </a>
                 </div>
                 <div class="apoiador">
@@ -927,44 +927,50 @@
                 </div>
             </div>
         </div>
-        <footer>
+        <section class="organizacao">
             <header class="section_header alternativo_header">
                 <img src="./components/images/icon_header.png" alt="">
                 <h2 style="width: 25%;">Realização / Organizadora</h2>
             </header>
-            <div class="footer_content">
-            <section class="abiogas">
-                <div class="logo">
-                    <a href="https://abiogas.org.br/"><img src="./components/images/logo_abiogas.png" alt="logo ABiogás"></a>
-                </div>
-            </section>
+            <div class="organizacao_content">
+                <section class="abiogas">
+                    <div class="logo">
+                        <a href="https://abiogas.org.br/"><img src="./components/images/logo_abiogas.png" alt="logo ABiogás"></a>
+                    </div>
+                </section>
+                
+                <section class="social_container">
+                    <div class="logo_anexo">
+                        <a href="http://anexoeventos.com.br/" target="_blank" rel="noopener noreferrer">
+                            <img src="./components/images/ANEXOLOGO.png" alt="Logo anexo eventos">
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </section>
+        <footer>
             <section class="faleconosco_container">
                 <button class="faleconosco btn" id="faleconosco" onclick="open_modal('modal_contato')"> fale conosco</button>
             </section>
             <section class="social_container">
-                <div class="logo_anexo">
-                    <a href="http://anexoeventos.com.br/" target="_blank" rel="noopener noreferrer">
-                        <img src="./components/images/ANEXOLOGO.png" alt="Logo anexo eventos">
-                    </a>
-                </div>
-                <ul class="social" style="display: none;">
+                <ul class="social">
                     <li class="social_icon">
                             <a href="https://www.linkedin.com/company/abiogas">
-                                <img src="./components/images/LinkedIn - Negative.svg" alt="linkedin">
+                                <img src="./components/images/linkedin_red.png" alt="linkedin">
                                 
                             </a>
                         <a href="https://www.instagram.com/abiogas/">
-                            <img src="./components/images/Instagram - Negative.svg" alt="instagram">
+                            <img src="./components/images/insta_red.png" alt="instagram">
                             
                         </a>
                         <a href="https://www.facebook.com/abiogas">
-                            <img src="./components/images/Facebook - Negative.svg" alt="facebook">
+                            <img src="./components/images/face_red.png" alt="facebook">
                             
                         </a>
                     </li>
                 </ul>
             </section>
-        </div>
         </footer>
     </main>
     <div id="modal_image" class="modal">

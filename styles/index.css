@@ -97,6 +97,7 @@ body{
     'PROGRAMACAO'
     'PATROCINADOR'
     'APOIADORES'
+    'ORGANIZACAO'
     'FOOTER';
     width: 100%;
     height: auto;
@@ -930,12 +931,14 @@ iframe{
     width: 100%;
     height: 100%;
 }
-
-/*############### FOOTER #####################*/
-/* .main_content footer{
+.organizacao{
+    grid-area: ORGANIZACAO;
     display: block;
-} */
-.footer_content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.organizacao_content{
     display: flex;
     width: 100%;
     align-items: center;
@@ -943,10 +946,14 @@ iframe{
     justify-content: space-between;
     margin: 0 auto;
 }
-.main_content footer{
+/*############### FOOTER #####################*/
+/* .main_content footer{
+    display: block;
+} */
+footer{
     width: 80%;
     height: auto;
-    display: block;
+    display: flex;
     grid-area: FOOTER;
     align-items: center;
     justify-content: space-between;
@@ -973,7 +980,7 @@ iframe{
     height: auto;
 }
 .faleconosco_container{
-    justify-content: center;
+    justify-content: left;
 }
 .social_container{
     justify-content: end;
