@@ -293,12 +293,14 @@
     .patrocinadores_container{
         justify-content: center;
     }
+    
     .dois_patrocinio section{
         width: 100%;
     }
     .cota_container{
         justify-content: center;
         margin: 0;
+        width: 100%;
     }
 
     .apoiadores_box{
