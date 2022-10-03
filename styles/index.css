@@ -729,6 +729,20 @@ iframe{
     width: 100%;
     height: auto;
 }
+.dois_patrocinio{
+    display: flex;
+    column-gap: 20px;
+}
+
+.dois_patrocinio .alternativo_header{
+    width: auto;
+}
+.dois_patrocinio section:first-child{
+    width: 40%;
+}
+.dois_patrocinio section{
+    width: 70%;
+}
 .cota{
     display: flex;
     flex-direction: column;
@@ -860,7 +874,8 @@ iframe{
     /* gap: 20px 20px; */
     flex-wrap: wrap;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
+    column-gap: 20px;
     width: 100%;
 }
 
@@ -912,7 +927,7 @@ iframe{
     margin: 0 auto;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: left;
+    justify-content: space-evenly;
 }
 .apoiador{
     display: flex;

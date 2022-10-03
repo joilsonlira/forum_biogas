@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+    <link rel="preload" href="./components/fonts/gotham.woff" as="font" type="font/woff" crossorigin />
+    <link rel="preload" href="./components/fonts/gotham.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./components/fonts/gotham-bold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./components/fonts/gotham-bold.woff" as="font" type="font/woff" crossorigin />
+
     <link rel="preload" href="styles/fonts.css" as="style">
     <link rel="preload" href="styles/index.css" as="style">
+
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/media.css">
-    <link rel="shortcut icon" href="./components/images/favicon.png" type="image/x-icon">
 
+    <link rel="shortcut icon" href="./components/images/favicon.png" type="image/x-icon">
 
     <title>Fórum ABiogas</title>
 </head>
@@ -209,7 +214,7 @@
                 <section class="programacao_content">
                     <p style="color: white; width:100%; text-align:center; font-size: 24px; font-weight: bolder;">Tema: Biogás, a revolução sustentável já começou!</p>
                     <header class="programacao_header" style="width: 100%; padding: 1rem; margin-top: 20px;">
-                        <h2 style="width: 100%; color:#CA2005; text-align: center;margin-top: 40px; border-bottom: 1px solid white;">30/11</h2>
+                        <h2 style="width: 100%; color:#CA2005; text-align: center;margin-top: 40px;">30/11</h2>
                     </header>
                     
                     <section class="painel">
@@ -450,7 +455,7 @@
                 </section>
                 <section class="programacao_content">
                     <header class="programacao_header">
-                        <h2  style="width: 100%; color:#CA2005; text-align: center; margin-top: 40px; border-bottom: 1px solid white;">01/12</h2>
+                        <h2  style="width: 100%; color:#CA2005; text-align: center; margin-top: 40px;">01/12</h2>
                     </header>
                     <section class="painel">
                         <header class="painel_header">
@@ -739,7 +744,7 @@
                             <img src="./components/images/icon_header.png" alt="">
                             <h2 style="width: 180px;">patrocinio DIAMANTE</h2>
                         </header>
-                        <div class="patrocinadores_container" style="justify-content: space-between;">
+                        <div class="patrocinadores_container" style="justify-content: space-evenly;">
                             <div class="patrocinador_logo">
                                 <a href="https://www.scania.com/br/pt/home/contact-us.html" target="_blank" rel="noopener noreferrer">
                                     <img src="./components/images/patrocinadores_ssets/logo_scania_v.png" alt="Patrocinador diamante, Scania">
@@ -777,52 +782,55 @@
                             </div>
                         </div>
                     </section>
-                    <section class="cota_container">
-                        <header class="section_header alternativo_header">
-                            <img src="./components/images/icon_header.png" alt="">
-                            <h2 style="width: 135px;">patrocinio OURO</h2>
-                        </header>
-                        <div class="patrocinadores_container">
-                            <div class="patrocinador_logo">
-                                <a href="https://www.mwm.com.br/site.aspx/Contato" target="_blank" rel="noopener noreferrer">
-                                    <img src="./components/images/patrocinadores_ssets/Logo MWM Geradores.png" alt="Patrocinador ouro, MWM">
-                                </a>
+                    <div class="dois_patrocinio">
+                        <section class="cota_container">
+                            <header class="section_header alternativo_header">
+                                <img src="./components/images/icon_header.png" alt="">
+                                <h2 style="width: 220px;">patrocinio OURO</h2>
+                            </header>
+                            <div class="patrocinadores_container">
+                                <div class="patrocinador_logo">
+                                    <a href="https://www.mwm.com.br/site.aspx/Contato" target="_blank" rel="noopener noreferrer">
+                                        <img src="./components/images/patrocinadores_ssets/Logo MWM Geradores.png" alt="Patrocinador ouro, MWM">
+                                    </a>
+                                </div>
+                                <div class="patrocinador_logo">
+                                    <a href="https://lonjastec.es/pt/contato/" target="_blank" rel="noopener noreferrer">
+                                        <img src="./components/images/patrocinadores_ssets/LOGO LONJAS.png" alt="Patrocinador ouro, LONJAS" style="width: 150px;">
+                                    </a>
+                                </div>
                             </div>
-                            <div class="patrocinador_logo">
-                                <a href="https://lonjastec.es/pt/contato/" target="_blank" rel="noopener noreferrer">
-                                    <img src="./components/images/patrocinadores_ssets/LOGO LONJAS.png" alt="Patrocinador ouro, LONJAS" style="width: 130px;">
-                                </a>
+                        </section>
+
+                        <section class="cota_container">
+                            <header class="section_header alternativo_header">
+                                <img src="./components/images/icon_header.png" alt="">
+                                <h2 style="width: 160px;">patrocinio PRATA</h2>
+                            </header>
+                            <div class="patrocinadores_container">
+                                <div class="patrocinador_logo">
+                                    <a href="https://www.geobiogas.tech/contato/" target="_blank" rel="noopener noreferrer">
+                                        <img src="./components/images/patrocinadores_ssets/logo-color-completo(2).png" alt="Patrocinador prata, geobiogas" style="width: 90px;">
+                                    </a>
+                                </div>
+                                <div class="patrocinador_logo">
+                                    <a href="https://ecotecco.com.br/contato/" target="_blank" rel="noopener noreferrer">
+                                        <img src="./components/images/patrocinadores_ssets/Ecotec-Brasil.png" alt="Patrocinador prata, Ecotech">
+                                    </a>
+                                </div>
+                                <div class="patrocinador_logo">
+                                    <a href="https://greenlanerenewables.com/contact/contact-info/" target="_blank" rel="noopener noreferrer">
+                                        <img src="./components/images/patrocinadores_ssets/Greenlane-Biogas-Logo.png" alt="Patrocinador prata, Greenlane Biogas" style="width: 130px;">
+                                    </a>
+                                </div>
+                                <div class="patrocinador_logo">
+                                    <a href="https://supplybr.com/contato/" target="_blank" rel="noopener noreferrer">
+                                        <img src="./components/images/patrocinadores_ssets/smart_supply.png" alt="Patrocinador prata, Smart Supply">
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class="cota_container">
-                        <header class="section_header alternativo_header">
-                            <img src="./components/images/icon_header.png" alt="">
-                            <h2 style="width: 140px;">patrocinio PRATA</h2>
-                        </header>
-                        <div class="patrocinadores_container">
-                            <div class="patrocinador_logo">
-                                <a href="https://www.geobiogas.tech/contato/" target="_blank" rel="noopener noreferrer">
-                                    <img src="./components/images/patrocinadores_ssets/logo-color-completo(2).png" alt="Patrocinador prata, geobiogas" style="width: 90px;">
-                                </a>
-                            </div>
-                            <div class="patrocinador_logo">
-                                <a href="https://ecotecco.com.br/contato/" target="_blank" rel="noopener noreferrer">
-                                    <img src="./components/images/patrocinadores_ssets/Ecotec-Brasil.png" alt="Patrocinador prata, Ecotech">
-                                </a>
-                            </div>
-                            <div class="patrocinador_logo">
-                                <a href="https://greenlanerenewables.com/contact/contact-info/" target="_blank" rel="noopener noreferrer">
-                                    <img src="./components/images/patrocinadores_ssets/Greenlane-Biogas-Logo.png" alt="Patrocinador prata, Greenlane Biogas" style="width: 130px;">
-                                </a>
-                            </div>
-                            <div class="patrocinador_logo">
-                                <a href="https://supplybr.com/contato/" target="_blank" rel="noopener noreferrer">
-                                    <img src="./components/images/patrocinadores_ssets/smart_supply.png" alt="Patrocinador prata, Smart Supply">
-                                </a>
-                            </div>
-                        </div>
-                    </section>
+                        </section>
+                    </div>
                     <section class="cota_container">
                         <header class="section_header alternativo_header">
                             <img src="./components/images/icon_header.png">
