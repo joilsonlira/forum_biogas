@@ -291,6 +291,7 @@
     .apoiadores_box{
         width: 100%;
         padding: .5rem;
+        justify-content: center;
     }
     footer{
         flex-direction: column;
