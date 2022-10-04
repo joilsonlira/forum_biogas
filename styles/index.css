@@ -746,7 +746,7 @@ iframe{
 .cota{
     display: flex;
     flex-direction: column;
-    
+    width: 80%;
 }
 
 .container_modal_patrocinador{
@@ -822,20 +822,6 @@ iframe{
     width: 100%;
     height: auto;
 }
-/*############## VARIAÇÃO DE TAMANHOS PARA OS LOGOS DE ACORDO COM A COTA DE PATROCINIO ####### */
-/* .cota .cota_container:nth-child(1) .patrocinadores_container .patrocinador_logo{
-    width: 225px;
-    height: 225px;
-}
-.cota .cota_container:nth-child(2) .patrocinadores_container .patrocinador_logo{
-    width: 200px;
-    height: 200px;
-}
-.cota .cota_container:nth-child(3) .patrocinadores_container .patrocinador_logo{
-    width: 175px;
-    height: 175px;
-} */
-/*#############################################################################################*/
 
 /* ######################## header_cota_and_apoiadores */
 .alternativo_header{
@@ -860,14 +846,46 @@ iframe{
     /* background-color: #DBDBDB; */
 }
 /* ################################################### */
-.cota{
-    width: 80%;
+
+.diamante h2{
+    width: 180px;
 }
-.cota_container{
-    height: auto;
-    
+.diamante .patrocinadores_container{
+    justify-content: space-evenly;
+}
+.diamante .patrocinadores_container div:nth-child(5) img{
+    width: 150px;
+    /* background-color: #082333; */
+}
+.diamante .patrocinadores_container div:nth-child(7) img{
+    width: 140px;
+    /* background-color: #082333; */
 }
 
+.ouro h2{
+    width: 245px;
+}
+.ouro .patrocinadores_container div:nth-child(2) img{
+    width: 150px;
+}
+
+.prata h2{
+    width: 165px;
+}
+.prata .patrocinadores_container div:nth-child(1) img{
+    width: 90px;
+}
+.prata .patrocinadores_container div:nth-child(3) img{
+    width: 130px;
+}
+
+.bronze h2{
+    width: 160px;
+}
+.bronze .patrocinadores_container div:nth-child(1) img{
+    width: 90px;
+}
+/* ######################################## */
 .patrocinadores_container{
     height: auto;
     display: flex;
@@ -919,6 +937,40 @@ iframe{
     flex-direction: column;
     justify-content: center;
 }
+.apoiador_container div:nth-child(1) h2{
+    width: 165px;
+}
+/* ############## configuração dos logos de apoiadores unitariamente ######### */
+.apoiador_container div:nth-child(3) img{
+    height: 55px;
+    width: auto;
+    /* background-color: #29404D; */
+}
+.apoiador_container div:nth-child(9) img{
+    height: 45px;
+    /* background-color: #29404D; */
+}
+.apoiador_container div:nth-child(11) img{
+    width: 115px;
+    /* background-color: #29404D; */
+}
+.apoiador_container div:nth-child(12){
+    width: 100px;
+    /* background-color: #29404D; */
+}
+.apoiador_container div:nth-child(13){
+    width: 100px;
+    /* background-color: #29404D; */
+}
+.apoiador_container div:nth-child(14) img{
+    width: 45px;
+    /* background-color: #29404D; */
+}
+.apoiador_container div:nth-child(15){
+    width: 130px;
+    /* background-color: #29404D; */
+}
+/* ########################################################## */
 .apoiadores_box{
     gap: 10px 10px;
     width: 80%;
@@ -949,6 +1001,9 @@ iframe{
     display: block;
     width: 80%;
     margin: 0 auto;
+}
+.organizacao h2{
+    width: 250px;
 }
 
 .organizacao_content{
