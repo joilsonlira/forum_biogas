@@ -97,8 +97,8 @@ body{
     'PROGRAMACAO'
     'PATROCINADOR'
     'APOIADORES'
-    'ORGANIZACAO'
     'FOOTER';
+    /* 'ORGANIZACAO' */
     width: 100%;
     height: auto;
     font-family: 'gotham';
