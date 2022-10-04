@@ -892,7 +892,7 @@ iframe{
     /* gap: 20px 20px; */
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     column-gap: 20px;
     width: 100%;
 }
@@ -979,7 +979,7 @@ iframe{
     margin: 0 auto;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .apoiador{
     display: flex;
