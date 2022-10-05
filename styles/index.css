@@ -939,6 +939,11 @@ iframe{
     flex-direction: column;
     justify-content: center;
 }
+.apoiador_container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .apoiador_container div:nth-child(1) h2{
     width: 165px;
 }
@@ -950,6 +955,10 @@ iframe{
 }
 .apoiador_container div:nth-child(9) img{
     height: 45px;
+    /* background-color: #29404D; */
+}
+.apoiador_container div:nth-child(10) img{
+    width: 105px;
     /* background-color: #29404D; */
 }
 .apoiador_container div:nth-child(11) img{
