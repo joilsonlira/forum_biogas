@@ -346,6 +346,9 @@
         flex-direction: column;
         gap:var(--standart-padding-margin);
     }
+    footer .apoiadores_box{
+        justify-content: center;
+    }
     .social_icon{
         display: flex;
         width: 100%;

@@ -1036,9 +1036,17 @@ footer{
     display: flex;
     grid-area: FOOTER;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     /* padding: var(--standart-padding-margin); */
     margin: var(--standart-padding-margin) auto;
+}
+footer .apoiadores_box{
+    width: 100%;
+    justify-content: space-between;
+}
+footer .alternativo_header h2{
+    width: 265px;
 }
 .abiogas ,.faleconosco_container, .social_container{
     width: 30%;
