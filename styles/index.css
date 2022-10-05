@@ -1056,11 +1056,12 @@ footer .alternativo_header h2{
     justify-content: center;
     /* margin: 10px 0; */
 }
-.abiogas{
+.organizacao_content .abiogas .logo a{
     justify-content: start;
 }
 .abiogas .logo{
     display: flex;
+    justify-content: start;
     align-items: center;
 }
 .abiogas .logo img{
