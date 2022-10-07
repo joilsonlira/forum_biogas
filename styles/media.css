@@ -354,7 +354,7 @@
         width: 100%;
         justify-content: center;
         column-gap: 65px;
-        margin: 20px 0;
+        margin-top: 20px;
     }
     .social_icon a{
         margin-top: 20px;
@@ -365,6 +365,9 @@
     .abiogas ,.faleconosco_container, .social_container{
         justify-content: center;
         width: 100%;
+    }
+    .social_container{
+        height: auto;
     }
 
     /*############# MODAL #################*/

@@ -1021,12 +1021,11 @@ iframe{
 }
 
 .organizacao_content{
-    display: flex;
     width: 100%;
-    align-items: center;
-    /* background-color: #29404D; */
-    justify-content: space-between;
+    display: flex;
     margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /*############### FOOTER #####################*/
@@ -1037,19 +1036,32 @@ footer{
     width: 80%;
     height: auto;
     display: flex;
+    flex-direction: column;
     grid-area: FOOTER;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
-    /* padding: var(--standart-padding-margin); */
     margin: var(--standart-padding-margin) auto;
 }
 footer .apoiadores_box{
     width: 100%;
+    height: auto;
+    align-items: center;
     justify-content: space-between;
+}
+footer .alternativo_header{
+    width: 100%;
 }
 footer .alternativo_header h2{
     width: 265px;
+}
+footer .apoiadores_box{
+    width: 100%;
+}
+footer .apoiadores_box .entrar_contato{
+    margin-bottom: 0;
+}
+.entrar_contato{
+    width: auto;
 }
 .abiogas ,.faleconosco_container, .social_container{
     width: 30%;
@@ -1070,9 +1082,6 @@ footer .alternativo_header h2{
 .abiogas .logo img{
     width: 50%;
     height: auto;
-}
-.faleconosco_container{
-    justify-content: left;
 }
 .social_container{
     justify-content: end;
