@@ -1047,12 +1047,14 @@ footer .apoiadores_box{
     height: auto;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 footer .alternativo_header{
     width: 100%;
 }
 footer .alternativo_header h2{
     width: 265px;
+    font-size: .8em;
 }
 footer .apoiadores_box{
     width: 100%;
