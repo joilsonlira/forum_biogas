@@ -351,6 +351,7 @@
     }
     footer .alternativo_header h2{
         font-size: 1.3em;
+        text-align: center;
     }
     .social_icon{
         display: flex;
