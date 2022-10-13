@@ -342,6 +342,16 @@
         width: 100%;
     }
 
+    .parceiros{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parceiro_header h2{
+        width: 300px;
+        text-align: center;
+    }
+
     footer{
         flex-direction: column;
         gap:var(--standart-padding-margin);

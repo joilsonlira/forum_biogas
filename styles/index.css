@@ -985,6 +985,22 @@ iframe{
     /* background-color: #29404D; */
 }
 /* ########################################################## */
+
+.parceiros{
+    flex-wrap: wrap;
+    width: 80%;
+}
+.parceiros .logo{
+    width: 100px;
+}
+.parceiros .logo img{
+    
+}
+
+.parceiro_header h2{
+    text-align: left;
+    width: 380px;
+}
 .apoiadores_box{
     gap: 10px 10px;
     width: 80%;
@@ -1027,6 +1043,7 @@ iframe{
     align-items: center;
     justify-content: space-between;
 }
+
 
 /*############### FOOTER #####################*/
 /* .main_content footer{
