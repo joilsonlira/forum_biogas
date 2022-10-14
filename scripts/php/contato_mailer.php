@@ -16,7 +16,7 @@ $myEmail = "secretaria@abiogas.org.br";//é necessário informar um e-mail do pr
 $headers = "From: $myEmail\r\n";
 $headers .= "Reply-To: $myEmail\r\n";
 
-$email_to = 'mkt@anexoeventos.com.br';
+$email_to = 'cadastro@anexoeventos.com.br';
 //não esqueça de substituir este email pelo seu.
 
 $corpo = $subject."\n";
