@@ -177,7 +177,7 @@ body{
     grid-area: START;
     align-items: center;
     justify-content: space-between;
-    margin: var(--header-initial-HEIGHT) 0;
+    margin-top: var(--header-initial-HEIGHT);
     padding: var(--standart-padding-margin);
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.6111) 0%, rgba(8, 35, 51, 0.5166) 100%), #29404D;
 }
@@ -321,7 +321,7 @@ body{
 .pre-inscricao{
     grid-area: PRE_INSCRICAO;
     margin: 0 auto;
-    /* width: 90%; */
+    width: 90%;
     height: auto;
 }
 .content_pre{
@@ -621,10 +621,10 @@ iframe{
     width: 90%;
     height: auto;
     display: flex;
-    padding: 0 2% 2% 2%;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    margin: 0 auto;
 }
 .hotel_box{
     width: 100%;

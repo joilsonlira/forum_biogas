@@ -82,29 +82,46 @@
                         </div>
                     </div>
                 </section>
-                <button class="endereco btn"><a href="https://www.google.com/maps/place/APAS+-+Associa%C3%A7%C3%A3o+Paulista+de+Supermercados/@-23.533824,-46.713912,10z/data=!4m5!3m4!1s0x0:0x8212404881c7839!8m2!3d-23.5338238!4d-46.7139116?hl=pt-BR" target="_blank">R. Pio XI, 1200 - Alto da Lapa, São Paulo - SP, 05060-001</a></button>
+                <!-- <button class="endereco btn"><a href="https://www.google.com/maps/place/APAS+-+Associa%C3%A7%C3%A3o+Paulista+de+Supermercados/@-23.533824,-46.713912,10z/data=!4m5!3m4!1s0x0:0x8212404881c7839!8m2!3d-23.5338238!4d-46.7139116?hl=pt-BR" target="_blank">R. Pio XI, 1200 - Alto da Lapa, São Paulo - SP, 05060-001</a></button> -->
                 
                 <!-- <div class="inscrevase_container">
                     <button class="btn_inscrevase btn" onclick="se_inscrever()">inscreva-se</button>
                 </div> -->
             </section>
         </section>
-        <!-- <section class="pre-inscricao" id="pre" style="display: none;">
+        <section class="pre-inscricao" id="pre">
             <header class="section_header">
                 <img src="./components/images/icon_header.png" alt="">
-                <h2>PRÉ-INSCRIÇÕES</h2>
+                <h2>local</h2>
             </header>
-            <div class="content_pre">
-                <p>Envie seu contato e receba o link assim que Fórum abrir inscrições!</p>
-            </div>
-            <form class="form-pre" action="scripts/php/pre_inscricao.php" method="post">
-                <input type="text" name="txt_nome_pre" id="txt_nome_pre" placeholder="NOME" required>
-                <input type="text" name="txt_empresa_pre" id="txt_empresa_pre" placeholder="Empresa/Instituição
-                " required>
-                <input type="email" name="txt_email_pre" id="txt_email_pre" placeholder="E-MAIL" required>
-                <button type="submit" class="btn">enviar</button>
-            </form>
-        </section> -->
+            <section class="programacao_start">
+                <p class="endereco_description">O FÓRUM BIOGÁS será realizado em São Paulo, nos dias<br/> <span>30 de novembro</span> e <span>01 dezembro</span>, <span>das 9h às 18h</span>.
+                </p>
+                <h2 class="endereco">
+                    Local: Espaço APAS - Lapa - São Paulo
+                </h2>
+                <button class="link_endereco btn">
+                    R. Pio XI, 1200 - Alto da Lapa, São Paulo SP, 05060-001
+                </button>
+                
+            </section>
+            <section class="hotel_container">
+                <header class="section_header">
+                    <h2>sugestão de hotéis</h2>
+                </header>
+                <div class="hotel_box">
+                    <div class="hotel"><a href="https://www.wzhoteljardins.com.br/" target="_blank"><img src="./components/images/fi_map-pin.svg">
+                        WZ HOTEL JARDINS
+                    </a></div>
+                    <div class="hotel"><a href="https://ibis.accor.com/brasil/index.pt-br.shtml" target="_blank"><img src="./components/images/fi_map-pin.svg">
+                        IBIS STYLES
+                    </a></div>
+                    <div class="hotel"><a href="https://hotelpanambysaopaulo.com.br/localizacao-2/" target="_blank"><img src="./components/images/fi_map-pin.svg">
+                        PANAMBY HOTEL SÃO PAULO
+                    </a></div>
+                </div>
+            </section>
+        </section>
         <section class="about" id="about">
             <header class="section_header">
                 <img src="./components/images/icon_header.png" alt="">
@@ -175,11 +192,8 @@
             </section>
         </section>
         <section class="programacao_container">
-            <header class="section_header">
-                <img src="./components/images/icon_header.png" alt="">
-                <h2>local</h2>
-            </header>
-            <section class="programacao_start">
+            
+            <!-- <section class="programacao_start">
                 <p class="endereco_description">O FÓRUM BIOGÁS será realizado em São Paulo, nos dias<br/> <span>30 de novembro</span> e <span>01 dezembro</span>, <span>das 9h às 18h</span>.
                 </p>
                 <h2 class="endereco">
@@ -205,7 +219,7 @@
                         PANAMBY HOTEL SÃO PAULO
                     </a></div>
                 </div>
-            </section>
+            </section> -->
             <section class="programacao" id="programacao">
                 <header class="section_header">
                     <img src="./components/images/icon_header.png">
@@ -388,40 +402,42 @@
                             <section class="content" style="justify-content: left;">
 
                                 <style>
+                                    
                                     .card_palestra{
-                                        background-color: aliceblue;
+                                        /* background-color: aliceblue; */
                                         padding: 1rem;
                                         border-radius: 4px;
+                                        color:rgba(255, 255, 255,.85);
                                     }
                                     .tema_palestra,.nome_apresentador,.cargo_apresentador{
                                         font-size: 1em;
                                     }
-                                    .tema_palestra{
-                                        color: #CA2005;
-                                    }
+                                    
                                     .tema_palestra strong{
                                         font-weight: bolder;
                                     }
-                                    .apresentador_box{
-                                        padding: 0 1rem;
-                                    }
+                                    
                                     .apresentador{
+                                        margin: .5rem 0;
                                         padding: .5rem 0;
                                     }
                                     .apresentador:hover{
-                                        cursor: pointer;
-                                        border: 1px solid #ccc;
-                                        border-radius: 4px;
-                                        padding: .5rem;
+                                        border-bottom: 2px solid #CA2005;
                                     }
+                                    
                                     .tema_palestra{
+                                        font-size: 18px;
+                                        color: white;
                                         margin: .5rem 0;
+                                    }
+                                    .nome_apresentador{
+                                        color: white;
                                     }
                                     .cargo_apresentador{
                                         font-weight: lighter;
                                     }
                                     .conten_palestra{
-                                        width: 500px;
+                                        width: 600px;
                                     }
                                     @media screen and (max-width:820){
                                         .conten_palestra{
@@ -429,39 +445,54 @@
                                         }
                                     }
                                 </style>
-                                
+
                                 <article class="card_palestra">
                                     <section class="conten_palestra">
-                                        <p>Apresentação</p>
-                                        <h2 class="tema_palestra">Tema: Visão geral da <strong>Air Products</strong> e aplicações no mercado de Biogás</h2>
-                                        <div>
-                                            <p>Apresentado por:</p>
-                                            <div class="apresentador_box">
-                                                <div class="apresentador">
-                                                    <h3 class="nome_apresentador">Sanders Zurdo Romao</h3>
-                                                    <p class="cargo_apresentador">Cargo:  Gerente de On-Site</p>
-                                                </div>
-                                                <div class="apresentador">
-                                                    <h3 class="nome_apresentador">Pedro Henrique Fernandes Batista</h3>
-                                                    <p class="cargo">Cargo: Gerente de Desenvolvimento de Novos Negócios</p>
-                                                </div>
+                                        <strong>Air Products</strong>
+                                        <h2 class="tema_palestra">Visão geral da Air Products e aplicações no mercado de Biogás</h2>
+                                        
+                                        <p>Apresentado por:</p>
+                                        <div class="apresentador_box">
+                                            <div class="apresentador">
+                                                <h3 class="nome_apresentador">Sanders Zurdo Romao</h3>
+                                                <p class="cargo_apresentador">Gerente de On-Site</p>
+                                            </div>
+                                            <div class="apresentador">
+                                                <h3 class="nome_apresentador">Pedro Henrique Fernandes Batista</h3>
+                                                <p class="cargo">Gerente de Desenvolvimento de Novos Negócios</p>
                                             </div>
                                         </div>
+                                        
                                     </section>
                                 </article>
+
                                 <article class="card_palestra">
                                     <section class="conten_palestra">
-                                        <p>Apresentação</p>
-                                        <h2 class="tema_palestra">Tema: <strong>Bauer</strong> Compressor Solutions for Biogas, RNG, and CNG Applications</h2>
-                                        <div>
+                                        <strong>Bauer</strong>
+                                        <h2 class="tema_palestra"><strong>Bauer</strong> Compressor Solutions for Biogas, RNG, and CNG Applications</h2>
                                             <p>Apresentado por:</p>
                                             <div class="apresentador_box">
                                                 <div class="apresentador">
                                                     <h3 class="nome_apresentador">Antonio Carlos F. Dias</h3>
-                                                    <p class="cargo_apresentador">Cargo: Latin America Business Development</p>
+                                                    <p class="cargo_apresentador">Latin America Business Development</p>
                                                 </div>
                                             </div>
+                                    </section>
+                                </article>
+
+                                <article class="card_palestra">
+                                    <section class="conten_palestra">
+                                        <strong>AB Energy</strong>
+                                        <h2 class="tema_palestra">Os 3 fatores para um projeto de biogás/biometano de sucesso</h2>
+                                        
+                                        <p>Apresentado por:</p>
+                                        <div class="apresentador_box">
+                                            <div class="apresentador">
+                                                <h3 class="nome_apresentador">Guilherme Genesini Galhardo</h3>
+                                                <p class="cargo_apresentador">Engenheiro de Vendas</p>
+                                            </div>
                                         </div>
+                                        
                                     </section>
                                 </article>
                             </section>
