@@ -379,12 +379,92 @@
                             </header>
                         </section>
                         <section class="painel">
-                            <header class="painel_header">
+                            <header class="painel_header" style="border-bottom: none;">
                                 <h2 class="horario">16:20 às 17h</h2>
                                 <h3 class="title_painel">
                                     Novidades do setor
                                 </h3>
                             </header>
+                            <section class="content" style="justify-content: left;">
+
+                                <style>
+                                    .card_palestra{
+                                        background-color: aliceblue;
+                                        padding: 1rem;
+                                        border-radius: 4px;
+                                    }
+                                    .tema_palestra,.nome_apresentador,.cargo_apresentador{
+                                        font-size: 1em;
+                                    }
+                                    .tema_palestra{
+                                        color: #CA2005;
+                                    }
+                                    .tema_palestra strong{
+                                        font-weight: bolder;
+                                    }
+                                    .apresentador_box{
+                                        padding: 0 1rem;
+                                    }
+                                    .apresentador{
+                                        padding: .5rem 0;
+                                    }
+                                    .apresentador:hover{
+                                        cursor: pointer;
+                                        border: 1px solid #ccc;
+                                        border-radius: 4px;
+                                        padding: .5rem;
+                                    }
+                                    .tema_palestra{
+                                        margin: .5rem 0;
+                                    }
+                                    .cargo_apresentador{
+                                        font-weight: lighter;
+                                    }
+                                    .conten_palestra{
+                                        width: 500px;
+                                    }
+                                    @media screen and (max-width:820){
+                                        .conten_palestra{
+                                            width: 100%;
+                                        }
+                                    }
+                                </style>
+                                
+                                <article class="card_palestra">
+                                    <section class="conten_palestra">
+                                        <p>Apresentação</p>
+                                        <h2 class="tema_palestra">Tema: Visão geral da <strong>Air Products</strong> e aplicações no mercado de Biogás</h2>
+                                        <div>
+                                            <p>Apresentado por:</p>
+                                            <div class="apresentador_box">
+                                                <div class="apresentador">
+                                                    <h3 class="nome_apresentador">Sanders Zurdo Romao</h3>
+                                                    <p class="cargo_apresentador">Cargo:  Gerente de On-Site</p>
+                                                </div>
+                                                <div class="apresentador">
+                                                    <h3 class="nome_apresentador">Pedro Henrique Fernandes Batista</h3>
+                                                    <p class="cargo">Cargo: Gerente de Desenvolvimento de Novos Negócios</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </article>
+                                <article class="card_palestra">
+                                    <section class="conten_palestra">
+                                        <p>Apresentação</p>
+                                        <h2 class="tema_palestra">Tema: <strong>Bauer</strong> Compressor Solutions for Biogas, RNG, and CNG Applications</h2>
+                                        <div>
+                                            <p>Apresentado por:</p>
+                                            <div class="apresentador_box">
+                                                <div class="apresentador">
+                                                    <h3 class="nome_apresentador">Antonio Carlos F. Dias</h3>
+                                                    <p class="cargo_apresentador">Cargo: Latin America Business Development</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </article>
+                            </section>
                         </section>
                         <section class="painel">
                             <header class="painel_header">
