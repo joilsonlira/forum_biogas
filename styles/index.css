@@ -495,6 +495,44 @@ iframe{
     background-color: var(--color-MAIN);
 }
 /*############### PROGRAMAÇÃO & PAINEL #############*/
+
+.card_palestra{
+    /* background-color: aliceblue; */
+    padding: 1rem;
+    border-radius: 4px;
+    color:rgba(255, 255, 255,.85);
+}
+.tema_palestra,.nome_apresentador,.cargo_apresentador{
+    font-size: 1em;
+}
+
+.tema_palestra strong{
+    font-weight: bolder;
+}
+
+.apresentador{
+    margin: .5rem 0;
+    padding: .5rem 0;
+}
+.apresentador:hover{
+    border-bottom: 2px solid #CA2005;
+}
+
+.tema_palestra{
+    font-size: 18px;
+    color: white;
+    margin: .5rem 0;
+}
+.nome_apresentador{
+    color: white;
+}
+.cargo_apresentador{
+    font-weight: lighter;
+}
+.conten_palestra{
+    width: 600px;
+}
+
 .programacao{
     width: 80%;    
     height: auto;

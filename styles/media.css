@@ -233,6 +233,12 @@
         font-size: .6em;
         margin-bottom: 30px;
     }
+
+    .conten_palestra{
+        width: 100%;
+    }
+    
+
     /*################ PATROCINADOR #############*/
     .porque_patrocinador{
         width: 100%;
