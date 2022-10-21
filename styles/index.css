@@ -644,15 +644,15 @@ iframe{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    color: white;
+    /* color: white; */
 }
 #sustentavel h2{
     color: #CA2005;
     text-align: center;
 }
 .btn_sustentavel{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     /* background-color: white; */
     border-radius: 100%;
 }
@@ -667,7 +667,7 @@ iframe{
     width: 100%;
     height: auto;
     /* mix-blend-mode:difference; */
-    clip-path: circle();
+    /* clip-path: circle(); */
 }
 
 .sustentavel{
