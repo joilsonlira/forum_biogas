@@ -93,16 +93,16 @@ body{
     'START'
     'PRE_INSCRICAO'
     'ABOUT'
+    'FORUM'
     'EDICAO'
     'PROGRAMACAO'
+    'SUSTENTAVEL'
     'PATROCINADOR'
     'APOIADORES'
     'FOOTER';
-    /* 'ORGANIZACAO' */
     width: 100%;
     height: auto;
     font-family: 'gotham';
-    /* background-color: var(--color-BG); */
     background: linear-gradient(0deg, rgba(255, 255, 255, .9) 20%, rgba(8, 35, 51, 0.5166) 30%), #29404D;
 }
 .main_header{
@@ -387,6 +387,32 @@ body{
     color: var(--color-MAIN);
 }
 
+/* ################ FÓRUM ################## */
+.about_forum{
+    grid-area: FORUM;
+    width: 80%;
+    margin: 0 auto;
+}
+.forum_container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.forum_container p{
+    font-size: 1.5em;
+    text-align: justify;
+    color: white;
+}
+.forum_container span{
+    color: #CA2005;
+    font-weight: bolder;
+}
+.forum_container h2{
+    margin: 1rem 0;
+    font-size: 1.8em;
+    color: #CA2005;
+}
+/* ######################################### */
 
 /*################ ANTERIOR #################*/
 .edicao_anterior{
@@ -611,6 +637,78 @@ iframe{
     background-color: #CA2005;
     animation: crescer 500ms forwards;
 }
+
+/* ################### sustentavel ################ */
+#sustentavel{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    color: white;
+}
+#sustentavel h2{
+    color: #CA2005;
+}
+.btn_sustentavel{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 100%;
+}
+.btn_sustentavel a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.btn_sustentavel img{
+    width: 100%;
+    height: auto;
+}
+
+.sustentavel{
+    grid-area: SUSTENTAVEL;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.sustentavel_container{
+    width: 80%;
+    color: white;
+}
+.selo_container{
+    display: grid;
+    grid-template-columns: 50px auto;
+    grid-template-areas: 'selo conteudo';
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.selo_container p{
+    grid-area: conteudo;
+    text-align: justify;
+    margin: 0 0 20px 0;
+    padding: 1rem;
+}
+.selo_container span{
+    color: #CA2005;
+    font-weight: bold;
+}
+.selo{
+    grid-area: selo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.selo img{
+    width: 100%;
+    height: auto;
+}
+/* ################################################ */
+
 @keyframes crescer {
     0%{
         width: 0;
