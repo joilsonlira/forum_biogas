@@ -678,31 +678,31 @@ iframe{
     width: 80%;
     color: white;
 }
-.selo_container{
-    display: grid;
-    grid-template-columns: 50px auto;
-    grid-template-areas: 'selo conteudo';
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-}
-.selo_container p{
-    grid-area: conteudo;
-    text-align: justify;
-    margin: 0 0 20px 0;
-    padding: 1rem;
-}
-.selo_container span{
+
+.selo_box span{
     color: #CA2005;
     font-weight: bold;
+}
+.selo_box{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 'selo conteudo';
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
 }
 .selo{
     grid-area: selo;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    width: 50px;
+}
+.sele_box p{
+    grid-area: conteudo;
+    text-align: justify;
+    padding: 1rem;
 }
 .selo img{
     width: 100%;
