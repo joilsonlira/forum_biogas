@@ -309,14 +309,15 @@ body{
     height: auto;
 }
 .about{
-    width: 100%;
+    width: 80%;
     height: auto;
     display: flex;
     grid-area: ABOUT;
     align-items: center;
     font-family: 'gotham';
     flex-direction: column;
-    padding: 0 var(--standart-padding-margin);
+    margin: 0 auto;
+    /* padding: 0 var(--standart-padding-margin); */
 }
 .pre-inscricao{
     grid-area: PRE_INSCRICAO;
@@ -361,7 +362,7 @@ body{
 .about_container{
     display: flex;
     align-items: center;
-    margin: var(--standart-padding-margin) 0;
+    /* margin: var(--standart-padding-margin) 0; */
 }
 .about_information{
     width: 70%;
@@ -372,7 +373,7 @@ body{
 .about_information p{
     width: auto;
     margin: 15px 0;
-    line-height: 26px;
+    line-height: 1em;
     text-align: justify;
 }
 .about_image{
