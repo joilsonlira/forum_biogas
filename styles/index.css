@@ -653,7 +653,7 @@ iframe{
 .btn_sustentavel{
     width: 40px;
     height: 40px;
-    /* background-color: white; */
+    font-size: 1em;
     border-radius: 100%;
 }
 .btn_sustentavel a{
@@ -677,16 +677,31 @@ iframe{
     align-items: center;
 }
 
+.sustentavel_box{
+    margin-bottom: 3rem;
+}
+
 .sustentavel_container{
     width: 80%;
     color: white;
 }
-
-.sustentavel_container p{
+.sustentavel_descricao{
+    width: 80%;
+}
+.sustentavel_descricao p, .sustentavel_descricao li{
+    margin-top: 2rem;
+}
+.sustentavel_box p{
     text-align: justify;
     margin: 20px 0;
+    line-height: 28px;
 }
-
+.selo_container{
+    font-size: 1em;
+}
+.selo_container h2{
+    margin-bottom: 1rem;
+}
 .selo_box span, .sustentavel_container span{
     color: #CA2005;
     font-weight: bold;
@@ -698,7 +713,7 @@ iframe{
     justify-content: start;
     align-items: center;
     width: 100%;
-    margin: 20px 0;
+    margin-top: 24px;
 }
 .selo{
     grid-area: selo;
@@ -707,6 +722,12 @@ iframe{
     justify-content: center;
     width: 50px;
     margin-right: 20px;
+}
+.selos{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;   
+    margin: 4rem 0;
 }
 .sele_box p{
     grid-area: conteudo;
