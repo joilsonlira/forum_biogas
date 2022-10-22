@@ -715,6 +715,9 @@ iframe{
     width: 100%;
     margin-top: 24px;
 }
+.selo_box small{
+    margin-top: .5rem;
+}
 .selo{
     grid-area: selo;
     display: flex;
