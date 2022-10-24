@@ -33,7 +33,7 @@
                     <li class="menu_item"><a href="#forum" class="nav_link">forum</a></li>
                     <li class="menu_item"><a href="#edicoes_anteriores" class="nav_link">edições anteriores</a></li>
                     <li class="menu_item"><a href="#programacao" class="nav_link">Programação</a></li>
-                    <li class="btn_sustentavel"><a href="#sustentavel"><img src="./components/images/CO2 icone2.png" alt=""></a></li>
+                    <li class="btn_sustentavel" style="display: none"><a href="#sustentavel"><img src="./components/images/CO2 icone2.png" alt=""></a></li>
                     <li class="menu_item"><a href="#patrocinador" class="nav_link">seja um patrocinador</a></li>
                     <li class="menu_item" onclick="open_modal('modal_contato')"><a href="#faleconosco" class="nav_link">Fale conosco</a></li>
                 </ul>
@@ -213,34 +213,6 @@
             </section>
         </section>
         <section class="programacao_container">
-            
-            <!-- <section class="programacao_start">
-                <p class="endereco_description">O FÓRUM BIOGÁS será realizado em São Paulo, nos dias<br/> <span>30 de novembro</span> e <span>01 dezembro</span>, <span>das 9h às 18h</span>.
-                </p>
-                <h2 class="endereco">
-                    Local: Espaço APAS - Lapa - São Paulo
-                </h2>
-                <button class="link_endereco btn">
-                    R. Pio XI, 1200 - Alto da Lapa, São Paulo SP, 05060-001
-                </button>
-                
-            </section>
-            <section class="hotel_container">
-                <header class="section_header">
-                    <h2>sugestão de hotéis</h2>
-                </header>
-                <div class="hotel_box">
-                    <div class="hotel"><a href="https://www.wzhoteljardins.com.br/" target="_blank"><img src="./components/images/fi_map-pin.svg">
-                        WZ HOTEL JARDINS
-                    </a></div>
-                    <div class="hotel"><a href="https://ibis.accor.com/brasil/index.pt-br.shtml" target="_blank"><img src="./components/images/fi_map-pin.svg">
-                        IBIS STYLES
-                    </a></div>
-                    <div class="hotel"><a href="https://hotelpanambysaopaulo.com.br/localizacao-2/" target="_blank"><img src="./components/images/fi_map-pin.svg">
-                        PANAMBY HOTEL SÃO PAULO
-                    </a></div>
-                </div>
-            </section> -->
             <section class="programacao" id="programacao">
                 <header class="section_header">
                     <img src="./components/images/icon_header.png">
@@ -414,18 +386,16 @@
                             </header>
                         </section>
                         <section class="painel">
-                            <header class="painel_header" style="border-bottom: none;">
+                            <header class="painel_header" style="display: none;border-bottom: none;">
                                 <h2 class="horario">16:20 às 17h</h2>
                                 <h3 class="title_painel">
                                     Novidades do setor
                                 </h3>
                             </header>
-                            <section class="content" style="justify-content: left; display: none;">
-
+                            <section class="content" style="justify-content: left;">
+                            <!-- 
                                 <style>
-                                    
                                     .card_palestra{
-                                        /* background-color: aliceblue; */
                                         padding: 1rem;
                                         border-radius: 4px;
                                         color:rgba(255, 255, 255,.85);
@@ -465,7 +435,8 @@
                                             width: 100%;
                                         }
                                     }
-                                </style>
+                                </style> 
+                            -->
 
                                 <article class="card_palestra">
                                     <section class="conten_palestra">
@@ -879,7 +850,7 @@
                     </div>
                     <div class="selo_box">
                         <p>Pretendemos usar gerador à biometano*</p><br>
-                        <!-- <small>*projeto em análise local.</small> -->
+                        <small>*projeto em análise local.</small>
                     </div>
                 </div>
                 <div class="selos">
@@ -943,7 +914,7 @@
                         <div class="patrocinadores_container">
                             <div class="patrocinador_logo">
                                 <a href="https://www.scania.com/br/pt/home.html" target="_blank" rel="noopener noreferrer">
-                                    <img src="./components/images/patrocinadores_ssets/logo_scania_v.png" alt="Patrocinador diamante, Scania">
+                                    <img src="./components/images/patrocinadores_ssets/logo_scania_v.png" alt="Patrocinador diamante, Scania" style="margin-bottom: 5px">
                                 </a>
                             </div>
                             <div class="patrocinador_logo"> <!--  onclick="open_modal('modal_rizen')"-->
@@ -953,7 +924,7 @@
                             </div>
                             <div class="patrocinador_logo"> <!--  onclick="open_modal('modal_rizen')"-->
                                 <a href="https://www.ivecogroup.com/" target="_blank" rel="noopener noreferrer">
-                                    <img src="./components/images/patrocinadores_ssets/iveco_group.png" alt="Patrocinador diamante, Iveco Group">
+                                    <img src="./components/images/patrocinadores_ssets/iveco_group.png" alt="Patrocinador diamante, Iveco Group" style="width: 100px">
                                 </a>
                             </div>
                             <div class="patrocinador_logo"> <!--  onclick="open_modal('modal_rizen')"-->
@@ -963,17 +934,17 @@
                             </div>
                             <div class="patrocinador_logo"> <!--  onclick="open_modal('modal_rizen')"-->
                                 <a href="https://www.airproducts.com.br/" target="_blank" rel="noopener noreferrer">
-                                    <img src="./components/images/patrocinadores_ssets/AirProducts-logo-pms347-PNG.png" alt="Patrocinador diamante, Air Products">
+                                    <img src="./components/images/patrocinadores_ssets/AirProducts-logo-pms347-PNG.png" alt="Patrocinador diamante, Air Products" style="width: 130px; margin-left: 15px;">
                                 </a>
                             </div>
-                            <div class="patrocinador_logo" style="display: none;"> <!--  onclick="open_modal('modal_rizen')"-->
+                            <div class="patrocinador_logo"> <!--  onclick="open_modal('modal_rizen')"-->
                                 <a href="https://www.yarabrasil.com.br/" target="_blank" rel="noopener noreferrer">
-                                    <img src="./components/images/patrocinadores_ssets/yara-logo.png" alt="Patrocinador diamante, Air Products" style="width: 80px; height: 80px;">
+                                    <img src="./components/images/patrocinadores_ssets/yara-logo.png" alt="Patrocinador diamante, Air Products" style="width: 70px">
                                 </a>
                             </div>
                             <div class="patrocinador_logo"> <!--  onclick="open_modal('modal_rizen')"-->
                                 <a href="https://onpower.ind.br/" target="_blank" rel="noopener noreferrer">
-                                    <img src="./components/images/patrocinadores_ssets/LOGO ONPOWER.png" alt="Patrocinador diamante, ONPOWER">
+                                    <img src="./components/images/patrocinadores_ssets/LOGO ONPOWER.png" alt="Patrocinador diamante, ONPOWER" style="width: 120px; margin-right: 15px;">
                                 </a>
                             </div>
                             <div class="patrocinador_logo">
@@ -1007,7 +978,7 @@
                                 </div>
                                 <div class="patrocinador_logo">
                                     <a href="https://www.camfil.com/pt-br/" target="_blank" rel="noopener noreferrer">
-                                        <img src="./components/images/patrocinadores_ssets/CAMFIL.png" alt="Patrocinador ouro, Camfill"a>
+                                        <img src="./components/images/patrocinadores_ssets/CAMFIL.png" alt="Patrocinador ouro, Camfill" style="width: 115px">
                                     </a>
                                 </div>
                             </div>
@@ -1046,7 +1017,7 @@
                                 </div>
                                 <div class="patrocinador_logo">
                                     <a href="https://www.aspro.com.br/" target="_blank" rel="noopener noreferrer">
-                                        <img src="./components/images/patrocinadores_ssets/LOGO SINERGAS.png" alt="Patrocinador prata, UBE">
+                                        <img src="./components/images/patrocinadores_ssets/LOGO SINERGAS.png" alt="Patrocinador prata, Sinergás" style="width: 130px">
                                     </a>
                                 </div>
                             </div>

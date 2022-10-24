@@ -1044,9 +1044,9 @@ iframe{
     /* background-color: #082333; */
 }
 
-/* .ouro{
+.ouro{
     justify-content: center;
-} */
+}
 .ouro h2{
     width: 245px;
 }
@@ -1085,11 +1085,9 @@ iframe{
 }
 
 .patrocinador_logo{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     display: flex;
-    padding: 1rem;
-    /* border-radius: 2px; */
     object-fit: contain;
     align-items: center;
     flex-direction: column;
@@ -1097,7 +1095,6 @@ iframe{
     transition: all linear 500ms;
     -moz-transition: all linear 500ms;
     -webkit-transition: all linear 500ms;
-    /* background: rgba(255, 255, 255, .1); */
 }
 .patrocinador_logo a{
     width: auto;
@@ -1106,9 +1103,6 @@ iframe{
     align-items: center;
     justify-content: center;
 }
-/* .patrocinador_logo:hover, .apoiador:hover{
-    background: white;
-} */
 .patrocinador_logo img{
     width: 100%;
     height: auto;
