@@ -11,7 +11,7 @@
     <link rel="preload" href="./components/fonts/gotham-bold.woff" as="font" type="font/woff" crossorigin />
 
     <link rel="preload" href="styles/fonts.css" as="style">
-    <!-- <link rel="preload" href="styles/index.css" as="style"> -->
+    <link rel="preload" href="styles/index.css" as="style">
 
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/fonts.css">
@@ -124,7 +124,7 @@
                 </div>
             </section>
         </section>
-        <section class="about" id="about">
+        <section class="about" id="about" style="width: 80%; margin: 0 auto; font-weight: 400;">
             <header class="section_header">
                 <img src="./components/images/icon_header.png" alt="">
                 <h2>Quem somos</h2>
@@ -147,6 +147,27 @@
             </div>
         </section>
         <section class="about_forum" id="forum">
+            <!-- <style>
+                .forum_container{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px;
+                }
+                .forum_container p{
+                    font-size: 1em;
+                    text-align: justify;
+                    color: white;
+                }
+                .forum_container span{
+                    color: #CA2005;
+                    font-weight: bolder;
+                }
+                .forum_container h2{
+                    margin: 1rem 0;
+                    font-size: 1.8em;
+                    color: #CA2005;
+                }  
+            </style> -->
             <header class="section_header">
                 <img src="./components/images/icon_header.png" alt="">
                 <h2>O fórum do biogás</h2>
@@ -247,7 +268,7 @@
                                 Painel 1: Biogás como solução para a segurança energética
                             </h3>
                         </header>
-                        <section class="content">
+                        <section class="content" style="display: none">
                             <article class="card_palestrante">
                                 <section class="foto_palestrante">
                                     <img src="./components/images/teste_imagem.png" alt="Foto do palestrante">
@@ -438,7 +459,7 @@
                                 </style> 
                             -->
 
-                                <article class="card_palestra">
+                                <article class="card_palestra" style="display: none">
                                     <section class="conten_palestra">
                                         <strong>Air Products</strong>
                                         <h2 class="tema_palestra">Visão geral da Air Products e aplicações no mercado de Biogás</h2>
@@ -458,7 +479,7 @@
                                     </section>
                                 </article>
 
-                                <article class="card_palestra">
+                                <article class="card_palestra" style="display: none">
                                     <section class="conten_palestra">
                                         <strong>Bauer</strong>
                                         <h2 class="tema_palestra"><strong>Bauer</strong> Compressor Solutions for Biogas, RNG, and CNG Applications</h2>
@@ -472,7 +493,7 @@
                                     </section>
                                 </article>
 
-                                <article class="card_palestra">
+                                <article class="card_palestra" style="display: none">
                                     <section class="conten_palestra">
                                         <strong>AB Energy</strong>
                                         <h2 class="tema_palestra">Os 3 fatores para um projeto de biogás/biometano de sucesso</h2>
@@ -487,7 +508,7 @@
                                         
                                     </section>
                                 </article>
-                                <article class="card_palestra">
+                                <article class="card_palestra" style="display: none">
                                     <section class="conten_palestra">
                                         <strong>Raízen</strong>
                                         <h2 class="tema_palestra">Redefinindo o futuro da energia com biogás</h2>
@@ -813,7 +834,6 @@
                 </section>
             </section>
         </section>
-        </section>
         <section class="sustentavel" id="sustentavel">
             <header class="section_header">
                 <img src="./components/images/icon_header.png" alt="">
@@ -877,6 +897,7 @@
                     </div>
                 </div>
             </div>
+        </section>
         </section>
         <section class="patrocinador" id="patrocinador">
             <header class="section_header">
