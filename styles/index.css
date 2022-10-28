@@ -529,6 +529,28 @@ iframe{
     border-radius: 4px;
     color:rgba(255, 255, 255,.85);
 }
+.card_palestra strong::after{
+    display: block;
+    content: '';
+    width: 0%;
+    height: 2px;
+    margin-top: 2px;
+    background-color: #CA2005;
+}
+.card_palestra:hover strong{
+    transition: .1s all linear;
+    opacity: 1;
+    /* color: #CA2005; */
+}
+.card_palestra:hover strong::after{
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    margin-top: 2px;
+    border-radius: 50px;
+    background-color: #CA2005;
+}
 .tema_palestra,.nome_apresentador,.cargo_apresentador{
     font-size: 1em;
 }
@@ -540,9 +562,6 @@ iframe{
 .apresentador{
     margin: .5rem 0;
     padding: .5rem 0;
-}
-.apresentador:hover{
-    border-bottom: 2px solid #CA2005;
 }
 
 .tema_palestra{
