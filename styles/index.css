@@ -549,7 +549,9 @@ iframe{
     height: 2px;
     margin-top: 2px;
     border-radius: 50px;
+    transition: all .2s linear;
     background-color: #CA2005;
+    animation: crescer .3s forwards;
 }
 .tema_palestra,.nome_apresentador,.cargo_apresentador{
     font-size: 1em;
