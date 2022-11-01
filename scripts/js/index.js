@@ -52,6 +52,7 @@ for(let i = 0; i < images.length; i++){
 function se_inscrever(){
     window.location.href = 'https://doity.com.br/forum-do-biogas'
 }
+// window.location.reload(true);
 // setInterval(function(){
 //     location.reload();
 // },50000)
