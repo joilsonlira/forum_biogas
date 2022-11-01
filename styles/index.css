@@ -1054,7 +1054,7 @@ iframe{
     width: 180px;
 }
 .diamante .patrocinadores_container{
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .diamante .patrocinadores_container div:nth-child(5) img{
     width: 150px;
