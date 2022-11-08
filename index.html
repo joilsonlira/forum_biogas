@@ -252,6 +252,38 @@
                 </section>
             </section>
             <section class="programacao_container">
+                <style>
+                    .card_palestra{
+                        /* background-color: aliceblue; */
+                        padding: 1rem;
+                        border-radius: 4px;
+                        color:rgba(255, 255, 255,.85);
+                    }
+                    .card_palestra strong::after{
+                        display: block;
+                        content: '';
+                        width: 0%;
+                        height: 2px;
+                        margin-top: 2px;
+                        background-color: #CA2005;
+                    }
+                    .card_palestra:hover strong{
+                        transition: .1s all linear;
+                        opacity: 1;
+                        /* color: #CA2005; */
+                    }
+                    .card_palestra:hover strong::after{
+                        display: block;
+                        content: '';
+                        width: 100%;
+                        height: 2px;
+                        margin-top: 2px;
+                        border-radius: 50px;
+                        transition: all .2s linear;
+                        background-color: #CA2005;
+                        animation: crescer .3s forwards;
+                    }
+                </style>
                 <section class="programacao" id="programacao">
                     <header class="section_header">
                         <img src="./components/images/icon_header.png">
