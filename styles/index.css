@@ -638,14 +638,6 @@ iframe{
     text-overflow: ellipsis;
     text-align: center;
 }
-/* .card_palestrante:hover{
-    height: auto;
-    cursor: pointer;
-    align-items: center;
-    flex-direction: column;
-    transform: scale(1.02);
-    justify-content: center;
-} */
 .conten_palestrante .nome::after{
     display: block;
     content: '';
