@@ -626,7 +626,7 @@ iframe{
     flex-direction: column;
     width: 310px;
     height: 310px;
-    padding: 1rem;
+    /* padding: .5rem; */
     display: flex;
     overflow: hidden;
     line-height: 26px;
