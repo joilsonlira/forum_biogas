@@ -103,7 +103,7 @@ body{
     width: 100%;
     height: auto;
     font-family: 'gotham';
-    background: linear-gradient(0deg, rgba(255, 255, 255, .9) 20%, rgba(8, 35, 51, 0.5166) 30%), #29404D;
+    background: linear-gradient(0deg, rgba(255, 255, 255, .9) 10%, rgba(8, 35, 51, 0.5166) 30%), #29404D;
 }
 .main_header{
     z-index: 1;
