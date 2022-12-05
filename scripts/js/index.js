@@ -50,10 +50,6 @@ for(let i = 0; i < images.length; i++){
     });
 }
 function se_inscrever(){
-    alert('Evento concluido')
+    alert('Evento foi concluído ou finalizado')
     // window.location.href = 'https://doity.com.br/forum-do-biogas'
 }
-// window.location.reload(true);
-// setInterval(function(){
-//     location.reload();
-// },50000)
