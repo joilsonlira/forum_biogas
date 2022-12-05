@@ -54,7 +54,7 @@
                         <li class="menu_item"><a href="#programacao" class="nav_link">Programação</a></li>
                         <li class="btn_sustentavel"><a href="#sustentavel"><img src="./components/images/CO2 icone2.png" alt=""></a></li>
                         <li class="menu_item"><a href="#patrocinador" class="nav_link">seja um patrocinador</a></li>
-                        <li class="menu_item" onclick="open_modal('modal_contato')"><a href="#faleconosco" class="nav_link">Fale conosco</a></li>
+                        <li class="menu_item" onclick="open_modal('modal_contato')" style="display: none;"><a href="#faleconosco" class="nav_link">Fale conosco</a></li>
                     </ul>
                 </nav>
                 <div class="hamburger">
@@ -67,7 +67,7 @@
                 <div class="logo_start">
                     <img src="./components/images/Ativo 132logo 1.png" alt="Logo Fórum ABiogás">
                     <div class="inscrevase_container">
-                        <button class="btn_inscrevase btn" onclick="se_inscrever()">inscreva-se</button>
+                        <!-- <button class="btn_inscrevase btn" onclick="se_inscrever()">inscreva-se</button> -->
                     </div>
 
                 </div>
@@ -1097,7 +1097,7 @@
                             <div class="detail">
                                 <p><span>Mailing dos participantes</span> do evento (seguimos as normas da LGPD).</p>
                             </div>
-                            <div class="entrar_contato">
+                            <div class="entrar_contato"  style="display: none;">
                                 <h5>Quero ser um patrocinador</h5>
                                 <div class="contato_icons">
 
@@ -1432,7 +1432,7 @@
                 </header>
                 <div class="apoiadores_box">
                     <section class="entrar_contato">
-                        <div class="contato_icons">
+                        <div class="contato_icons"  style="display: none;">
                             <a class="float_btn btn" href="https://api.whatsapp.com/send?phone=+5511947578131&text=Fale conosco" target="_blank"><img src="./components/images/Vector.svg" alt="Contato por WhatsApp" /></a>
                             <a class="float_btn btn" onclick="open_modal('modal_contato')"><img src="./components/images/email_icon.svg" alt="Contato por email"></a>
                         </div>
